@@ -1,16 +1,16 @@
 
 
-header >.navbar-fixed> nav>.nav-wrapper{
+header >nav>.nav-wrapper{
     background-color: #e7e5e4;
     
 }
-header >.navbar-fixed> nav>.nav-wrapper>a>img{
-    margin-left: 1%;
+header >nav>.nav-wrapper>a>img{
+    margin-left: 20%;
 	background-color:#e7e5e4;
 }
-nav >div>ul>li>a{
+nav>div>ul>li>a{
     font-size:1.7vw;
-    color:#68653A; 
+    color:#8C8077; 
 	font-family:"centabel";
 	
 }
