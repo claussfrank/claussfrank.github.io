@@ -15,28 +15,25 @@ nav>div>ul>li>a{
 	
 }
 
-
-#acercaDeMi > div > p{
-	padding: 3% 3%;
-	font-size: 16px;
-	text-align: justify;
-	color:#68653A;
-	font-family:"centabel";
-	background-image: url(../assets/img/texturaFondo.png);
-	
+#acercaDeMi > div > div > p{
+	padding: 1%;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: left;
+	color:#424241;
+	font-family:"centabel";	
 }
 h3 {
-	color: #68653A;
+	color:   #424241;
 	font-family:"centabel";
 }
 h5 {
-	color: #68653A;
+	color:  #424241;
 	font-family:"centabel";
 }
 h2 {
-	color: #68653A;
+	color: #424241;
 	font-family:"centabel";
-	
 }
 #proyectos> div >.card{
     margin: 4%;
@@ -45,39 +42,37 @@ h2 {
 }
 .card-content > p > i{
 	margin: .5%;
-	color: #68653A;
+	color: #424241;
 
 	
 }
 .card-content > p > a{
 	margin: .5%;
-	color: #68653A;
+	color: #424241;
 	font-family:"centabel";
 }
 .card-content > span{
 	margin: .5%;
-	color: #68653A;
+	color: #424241;
 	font-family:"centabel";
 }
 .card-reveal{
-	color: #68653A;
+	color: #424241;
 	font-family:"centabel";
 }
 
 
 
 #contacto{
-    background-image: url(../assets/img/texturaFondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-	padding: 1%;
+   background-color: #76AC59;
+   padding: 2% 0 1% 0;
 }
 footer>div>div>div>a>i{
-	color:#68653A;
+	color:#fff;
 }
 
 footer>div>div>div>a{
-	color:#68653A;
+	color:#fff;
 	font-family:"centabel";
 	font-size: 16px;
 	font-weight: 600;
@@ -109,12 +104,12 @@ body {
 /*	overflow: hidden;*/
 }
 
-#clouds{
-	padding: 100px 0;
-	background: #c9dbe9;
-	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
-	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
-	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+body{
+	/* padding: 100px 0; */
+	background: #dce3e9;
+	background: -webkit-linear-gradient(top, #91c2e7 0%, #dce3e9 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #dce3e9 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #dce3e9 100%);
 }
 
 /*Time to finalise the cloud shape*/
