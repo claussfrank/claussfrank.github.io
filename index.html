@@ -5,186 +5,883 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>ClaussFrank</title>
 		<link rel="shortcut icon" href="assets/img/iconoLogo.png">
-		<!--        <link rel="stylesheet" href="css/font-awesome.min.css">-->
+		<!--		        <link rel="stylesheet" href="css/font-awesome.min.css">-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-		<link rel="stylesheet" href="css/main.css"> 
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+		 <link rel="stylesheet" href="assets/css/main.css">  
 
 	</head>
-	<body>
-		<header>
-			<nav>
-				<div class="nav-wrapper">
-					<a href="#!" class="brand-logo"><img class="z-depth-3" alt="logo" width="150px" height="150px"src="assets/img/logoBarra-03.svg"></a>
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="#acercaDeMi">Acerca de Mi</a></li>
-						<li><a href="#proyectos">Proyectos</a></li>
-						<li><a href="#habilidades">Habilidades</a></li>
-						<li><a href="#contacto">Contacto</a></li>
-					</ul> 
-					<ul class="side-nav" id="mobile-demo">
-						<li><a href="#acercaDeMi">Acerca de Mi</a></li>
-						<li><a href="#proyectos">Proyectos</a></li>
-						<li><a href="#habilidades">Habilidades</a></li>
-						<li><a href="#contacto">Contacto</a></li>
-					</ul> 
-				</div>
-			</nav>
-		</header>
+	<body  class="container ">
+		<nav class="navbar sticky-top navClau">
+			<div class="container-fluid">
+			  <a class="navbar-brand center" href="#"><img width="95%" src="assets/img/menuInicio.svg" alt="Inicio"></a>
+			  <a class="navbar-brand" href="#acercaDeMi"><img width="95%" src="assets/img/menuAcerca.svg" alt="Acerca de mi"></a>
+			  <a class="navbar-brand" href="#proyectos"><img width="95%" src="assets/img/menuProyectos.svg" alt="Proyectos"></a>
+			  <a class="navbar-brand" href="#habilidades"><img width="95%" src="assets/img/menuHabilidades.svg" alt="Habilidades Blandas"></a>
 
-		<div id="inicio" >
+			</div>
+		</nav>	
+		<section id="inicio" >
 			<div id="clouds" >
-				<div class="cloud x1"></div>
-				<div class="container">
-					<h2>Diseñadora Gráfica y Web,</h2>
-					<h5>Apasionada por la  Tecnología y el Medioambiente.</h5>
+					<!-- Nubes -->
+					<div class="cloud x1 row"></div>
+                    <div class="row align-items-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="h2">Claudia Franco</h2>
+                            <h3 class="h3">Diseñadora UX / Ul | Diseñadora Web | Diseñadar Gráfica</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/img/luna.svg" alt="luna">
+                        </div>
+                    </div>
+					
 					<!-- Nubes en movimiento -->
 					<div class="cloud x2"></div>
 					<div class="cloud x3"></div>
 					<div class="cloud x4"></div>
 					<div class="cloud x5"></div>
+
 				</div>
 			</div>
-		</div>
+		</section>
+		
+		
+		 
+
+		<section id="acercaDeMi">
+			<!--
+						<div class="row">
+							<h3 class="col s10 m6 offset-s1">Acerca de Mí:</h3>
+						</div>    
+			-->
+						<div class="row align-items-center">    
+							<img class="col-md-6 text-left" src="../assets/img/clau-f.svg">
+							<p class="col-md-6 text-left">
+                ¡Hola! Gracias por tu interés en conocerme. Me llamo Clau, soy Diseñadora UX/UI y Web, con experiencia en el desarrollo de soluciones digitales para diversas industrias como retail, e-commerce, salud, transporte y el sector financiero. Mi enfoque está en crear experiencias de usuario que sean efectivas y atractivas, combinando habilidades de programación, diseño centrado en UX/UI, marketing digital, SEO y análisis de datos con Google Analytics. Mi objetivo es usar estas habilidades para aportar valor al usuario, que a su vez se traduzca en beneficios para cada proyecto.
+                Cada proyecto ha sido una aventura única, y en cada uno he dejado una parte de mí. Para continuar con esta presentación, quiero que te imagines que estás en un campamento al aire libre, donde cada paso del camino representa los proyectos en los que he trabajado.
+							</p>           
+						</div>
+		</section>
+
+		<section id="proyectos" class="container text-center proyectos">
+            <h4 class="h4 ">Proyectos</h4>
+            <div class="row justify-content-md-center">
+              <p class="col-md-11 text-start textoIntro ">
+                Mis proyectos son como senderos que he explorado, cada uno con su propio reto. Puede que no sigan una misma ruta, pero siempre me he adaptado a las necesidades de cada entorno. He usado todas mis herramientas, tanto las que ya tenía como las que fui aprendiendo durante el recorrido. En muchos de estos caminos no tenía todas las respuestas desde el principio, pero siempre investigué y aprendí a medida que avanzaba, buscando sacar lo mejor de cada disciplina.
+              </p>
+            </div>
+            
 
 
-		<section id="acercaDeMi" class="container">
-			<div class="row">
-				<h3 class="col s10 m6 offset-s1">Acerca de Mí:</h3>
-			</div>    
-			<div class="row">    
-				<img class="col s8 offset-s2 m3 center" src="assets/img/logoCompleto.png">
-				<p class="col s12 m9 center ">
-					Soy Diseñadora gráfica y web, busco desarrollarme profesionalmente mediante la mejora continua, estableciendo metas a diario con el objetivo de ser competitiva y yendo un paso adelante.
-					Cuento con experiencia profesional en desarrollo web, campañas de concientización social-ambiental, atención y experiencia del cliente y sistemas de impresión.
-					Mi objetivo es colaborar con mis conocimientos, talento y esfuerzo para contribuir a la sociedad creando un impacto positivo en ella.
-				</p>           
-			</div>
+			
+				<ul class="nav nav-tabs  justify-content-center row justify-content-md-center "id="myTab" role="tablist">
+					<li class="nav-item tabProyectos col col-lg-2" role="presentation">
+						<button class="nav-link  active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Todos</button>
+					  </li>
+					  <li class="nav-item tabProyectos col col-lg-2" role="presentation">
+						<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Diseño UX UI</button>
+					  </li>
+					  <li class="nav-item tabProyectos col col-lg-2" role="presentation">
+						<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Diseño Web</button>
+					  </li>
+				  </ul>
+				  <div class="tab-content " id="myTabContent">
+					<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+<!-- INICIO TODOS LOS PROYECTOS  -->
+      <!-- INICIO FILA 1 -->
+                        <div class="container text-center">
+                            <div class="row g-2">
+                              <div class="col-8 containerCard">
+                                <div class="p-2 ">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Buen Fin</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body text-start textModal">
+                                                <img class="col-md-12" width="100%" src="assets/img/BuenFin2020.jpg" alt="Buen Fin 2020">
+                                                <p>Desarrollé, en conjunto con el equipo de Marketing, estrategias de comunicación efectivas y de fácil navegación, basadas en principios de usabilidad, para las campañas de El Buen Fin en 2018, 2019, y 2020. En 2019, implementé landings por categoría, resaltando las ofertas más importantes desde el lado del negocio, lo que optimizó la experiencia del usuario y facilitó el acceso a las promociones, contribuyendo a un crecimiento significativo.</p>
+                                                <h5>Herramientas Utilizadas:</h5>
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>JavaScript</li>
+                                                    <li>Adobe Photoshop</li>
+                                                    <li>Adobe XD</li>
+                                                </ul>
+                                                <h5>Beneficios Obtenidos:</h5>
+                                                <ul>
+                                                    <li>Aumento de 3,905% en el revenue.</li>
+                                                    <li>98% del tráfico proveniente de SEO orgánico.</li>
+                                                    <li>$1,953,884 generados en revenue de usuarios orgánicos.</li>
+                                                    <li>44% de los usuarios interactuaron con las promociones más relevantes, según Hotjar.</li>
+                                                </ul>
+                                            </div>
+                                            
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_BuenFin2020.jpg" alt="Buen Fin 2020"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                           <h4> Buen Fin 2020</h4>
+                                           <h6>BestBuy</h6>
+                                        </div>
+                                      </div>
+                            
+                                </div>
+                              </div>
+                            <div class="col-4 ">
+                                <div class="p-2 containerCard">
+                                        <div class="modal modal-lg fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Back to School 2019</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start textModal">
+                                                    <img class="col-md-12" width="100%" src="assets/img/BackToSchool_2019_ok.jpg" alt="Back to School 2019">
+                                                    <p>Durante la campaña de Back to School 2019, desarrollé una landing page categorizada para comunicar nuestras promociones, permitiendo a los usuarios encontrar computadoras que se ajustaran a sus necesidades específicas. El enfoque se centró en mitigar el desgaste cognitivo de los clientes, alineando sus necesidades con los equipos disponibles, categorizándolos en básicas, profesionales, de diseño y gaming. Esta estrategia resultó en un aumento del 250% en sesiones y un incremento del 16% en el revenue comparado con el año anterior. El éxito se debió al monitoreo constante de ofertas y a la rotación estratégica de productos en la landing.</p>
+                                                    <h5>Herramientas Utilizadas:</h5>
+                                                    <ul>
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>JavaScript</li>
+                                                        <li>Adobe Photoshop</li>
+                                                        <li>Adobe XD</li>
+                                                    </ul>
+                                                    <h5>Beneficios Obtenidos:</h5>
+                                                    <ul>
+                                                        <li>Aumento de 16% en el revenue.</li>
+                                                        <li>Sesiones: +250%</li>
+                                                    </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <button data-bs-target="#exampleModalToggle1" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_BackToSchool2019.jpg" alt="Back to School 2019"></button>
+                                        <div class="overlay">
+                                            <div class="textCard text-center">
+                                               <h4> Back to School 2019</h4>
+                                               <h6>BestBuy</h6>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Hot Sale 2020</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body text-start textModal">
+                                                <img class="col-md-12" width="100%" src="assets/img/HotSale2020.jpg" alt="Hot Sale 2020">
+                                                <p>Durante el Hot Sale 2019, desarrollé una landing page enfocada en mejorar la experiencia del usuario mediante la implementación de metodologías de UX y UI. El diseño se orientó al perfil del usuario, segmentando las ofertas por categorías para facilitar la búsqueda de productos según sus preferencias. Adicionalmente, se implementaron nuevos espacios para comunicar a más vendors, lo que resultó en un aumento del 114.97% en sesiones y un incremento del 75% en el revenue comparado con el año anterior en la categoría de Computadoras. También se lanzaron campañas de mailing que lograron un open rate 20% superior al del año anterior, y un aumento del 17% en el revenue.</p>
+                                                <h5>Herramientas Utilizadas:</h5>
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>JavaScript</li>
+                                                    <li>Adobe Photoshop</li>
+                                                    <li>Adobe XD</li>
+                                                </ul>
+                                                <h5>Beneficios Obtenidos:</h5>
+                                                <ul>
+                                                    <li>Revenue: +75% en la categoría de Computadoras</li>
+                                                    <li>Sesiones: +250%</li>
+                                                    <li>Open Rate: +20%</li>
+                                                    <li>Revenue por Email: +17%</li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_HotSale2020.jpg" alt="Hot Sale 2020"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                           <h4> Hot Sale 2020</h4>
+                                           <h6>BestBuy</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+<!-- FIN FILA 1 --> 
+ <!-- INICIO FILA 2 -->                       
+                          <div class="container text-center">
+                            <div class="row g-2">
+                               <div class="col-6 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Medforum - Estrategia Digital para Profesionales de la Salud</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start textModal">
+                                                    <img class="col-md-12" width="100%" src="assets/img/Medforum.jpg" alt="Medforum">
+                                                    <p>Medforum es una estrategia digital diseñada para conectar de manera efectiva con los profesionales de la salud a través de diferentes plataformas, incluyendo un sitio web de cursos, un portal de contenido científico y eventos en vivo como congresos y charlas. Mi rol en esta iniciativa abarcó la gestión y desarrollo de contenidos para el sitio web informativo, utilizando un CMS Drupal 7, y la programación de cursos a través de Moodle. También me encargué de la creación y adaptación de mails masivos utilizando Salesforce, lo que implicó la colaboración con equipos globales para alinear la ejecución correcta y gestionar bases de datos sensibles, logrando un ahorro significativo al realizar la gestión internamente.</p>
+                                                <h5>Herramientas Utilizadas:</h5>
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>JavaScript</li>
+                                                    <li>Adobe Photoshop</li>
+                                                    <li>Figma</li>
+                                                    <li>Drupal 7</li>
+                                                    <li>Moodle</li>
+                                                    <li>Salesforce</li>
+                                                    <li>Coordinación global</li>
+                                                </ul>
+                                                <h5>Beneficios Obtenidos:</h5>
+                                                <ul>
+                                                    <li>Eficiencia operativa: Ahorro de $1,000 USD por cada mail masivo al realizar la gestión internamente con Salesforce.</li>
+                                                    <li>Mejor colaboración global: Coordinación efectiva con equipos internacionales para alinear la ejecución de campañas y el desarrollo de sitios web.</li>
+                                                </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_Medforum.jpg" alt="Medforum"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4>Medforum</h4>
+                                            <h6>Novartis</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Tienda Novartis</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start textModal">
+                                                    <img class="col-md-12" width="100%" src="assets/img/Tienda-Novartis.jpg" alt="Tienda Novartis">
+                                                    <p>La Tienda Novartis es una iniciativa de comercio electrónico diseñada para eliminar intermediarios en la adquisición de medicamentos. El objetivo principal fue mejorar la usabilidad de la plataforma, ya que no contaba con un presupuesto para pruebas con usuarios reales.</p>
+                                                    <h5>Actividades Realizadas:</h5>
+                                                    <ul>
+                                                      <li>Diagnóstico Heurístico: Realicé un diagnóstico heurístico para identificar problemas de usabilidad en la interfaz. Los principales errores visuales y de navegación fueron abordados mediante la creación de un UI Kit, con la intención de evolucionar hacia un sistema de diseño integral.</li>
+                                                      <li>Resolución de Problemas: Uno de los principales problemas identificados a través de llamadas al Call Center fue la falta de claridad en el proceso de entrega de facturas. Se desarrolló un Journey Map para mapear las interacciones del usuario con el servicio, revelando que en ninguna etapa del proceso se comunicaba al usuario que la factura sería enviada al momento de la entrega del medicamento. Dado que muchos medicamentos son costosos y están cubiertos por aseguradoras que requieren la factura para reembolsos, esta omisión era crítica.</li>
+                                                      <li>Mejoras Implementadas: Para solucionar este problema, se añadió información clara en el correo de confirmación del pedido y en la sección de Ayuda. Además, se capacitó al Call Center sobre el proceso de emisión de facturas, ya que dependía de la entrega final del producto para poder generar la factura 24 horas después del pago, evitando problemas en caso de devoluciones.</li>
+                                                      <li>Categorización de Productos: También se trabajó en la categorización de productos para facilitar la navegación y búsqueda de medicamentos.</li>
+                                                    </ul>
+                                                <h5>Herramientas Utilizadas:</h5>
+                                                <ul>
+                                                    <li>Adobe Photoshop</li>
+                                                    <li>Adobe XD</li>
+                                                    <li>Figma</li>
+                                                    <li>Jouney Maps</li>
+                                                </ul>
+                                                <h5>Beneficios Obtenidos:</h5>
+                                                <ul>
+                                                    <li>Mejora en la claridad del proceso de facturación, reduciendo las consultas al Call Center.</li>
+                                                    <li>Creación de una base para un sistema de diseño que mejoró la experiencia del usuario.</li>
+                                                </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_Tienda-Novartis.jpg" alt="Tienda Novartis"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4>Tienda Novartis</h4>
+                                            <h6>Novartis</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                      <!-- FIN FILA 2 -->
+
+                        <!-- <div class="container text-center">
+                            <div class="row g-2">
+                              
+                            <div class="col-4 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal  modal-lg fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Respuesta de Pandemia 2020</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="col-md-12" width="100%" src="assets/img/RespustaPandemia.jpg" alt="RespustaPandemia">
+                                                    <p>hola.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_Pandemia.jpg" alt="RespustaPandemia"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4>Respuesta de Pandemia 2020</h4>
+                                            <h6>BestBuy</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Tech Service</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="col-md-12" width="100%" src="assets/img/Tech-Services.jpg" alt="Tech-Services">
+                                                    <p>hola.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle4" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_Tech-Service.jpg" alt="Tech-Services"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4>Tech Service</h4>
+                                            <h6>BestBuy</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Landing Enfermedades Cardivasculares</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="col-md-12" width="100%" src="assets/img/Inclisiran.jpg" alt="Inclisiran">
+                                                    <p>hola.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle7" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_Inclisiran.jpg" alt="Inclisiran"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4> Landing ECV</h4>
+                                            <h6>Novartis</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div> -->
+<!-- INICIO FILA 3 -->
+                        <div class="container text-center">
+                            <div class="row g-2">
+                              
+                            
+                            <div class="col-6 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Autocobro by OXXO</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start textModal">
+                                                    <img class="col-md-12" width="100%" src="assets/img/Autocobro.jpg" alt="Autocobro by Oxxo">
+                                                    <p>En mi rol actual en una consultora, mi cliente principal es OXXO, una tienda de conveniencia que está adaptando sistemas de autocobro para permitir a sus clientes realizar pagos de forma autónoma. Me uní al proyecto después del primer MVP, donde revisé el estado actual y comencé a identificar elementos clave para crear una línea gráfica coherente. Aplicando los principios heurísticos de Nielsen, realicé un análisis inicial para detectar problemas de usabilidad, pero enfrentamos limitaciones, como la necesidad de ajustar colores y contrastes en algunos botones. Esto llevó a una negociación con el equipo de desarrollo para implementar ajustes sin afectar significativamente los tiempos del proyecto.
+
+                                                      Mi enfoque fue establecer una comunicación efectiva con los equipos para priorizar soluciones y mitigar riesgos de usabilidad. A través de un proceso colaborativo, logramos mitigar varios problemas, aunque algunos continúan, pero seguimos en un proceso de mejora continua.
+                                                      
+                                                      También estoy trabajando en la evolución de nuestro UI Kit, buscando hacerlo más escalable a un sistema de diseño completo. Aunque aún no se ha implementado del todo en el equipo de desarrollo, en nuestro equipo de diseño ha sido una herramienta clave para integrar nuevas funcionalidades, como el programa de lealtad, pagos de servicios y control de ventas de productos restringidos como alcohol.
+                                                      </p>
+                                                    <h5>Herramientas Utilizadas:</h5>
+                                                    <ul>
+                                                        <li>Figma</li>
+                                                        <li>Azure</li>
+                                                        <li>Metodología Scrum </li>
+                                                    </ul>
+                                                    <h5>Beneficios Obtenidos:</h5>
+                                                    <ul>
+                                                        <li>Mejora continua del sistema de autocobro con la mitigación de problemas de usabilidad.</li>
+                                                        <li>Creación de una base sólida para la integración de nuevas funcionalidades a través del diseño centrado en el usuario.</li>
+                                                        <li>Implementación efectiva de un UI Kit como primer paso hacia un sistema de diseño escalable.</li>
+                                                    </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle8" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_autocobro.jpg" alt="Autocobro by Oxxo"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4>Autocobro</h4>
+                                            <h6>OXXO</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Proyecto retiro sin tarjeta código QR BBVA by OXXO</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start textModal">
+                                                    <img class="col-md-12" width="100%" src="assets/img/BBVA.jpg" alt="BBVA by Oxxo">
+                                                    <p>En este proyecto, colaboré en la implementación del servicio de retiro de efectivo mediante un código QR, desarrollado para la plataforma del banco BBVA y diseñado para ser utilizado en tiendas OXXO. El objetivo era ofrecer a los usuarios una forma más sencilla de retirar efectivo, eliminando la necesidad de ingresar números de tarjeta y montos manualmente, un proceso que a menudo generaba errores y filas largas.
+
+                                                      Mi participación incluyó la planificación y diseño del flujo de pantallas en conjunto con el equipo de desarrollo, asegurando que tanto la tecnología como la experiencia del usuario estuvieran alineadas. Aplicamos la línea gráfica ya establecida por BBVA, pero adaptamos y añadimos elementos visuales que facilitaran el uso del sistema para los cajeros de tienda, quienes son nuestros usuarios clave en este proceso.
+                                                      
+                                                      Para garantizar una experiencia fluida y reducir errores, diseñamos una barra de progreso que mostraba la secuencia de los pasos a seguir, proporcionando visibilidad y retroalimentación en cada etapa. Además, utilizamos ilustraciones pictográficas para ejemplificar las acciones y aplicamos jerarquías claras en las cantidades y totales, de modo que la información fuera fácil de entender.
+                                                      
+                                                      Este proyecto fue un esfuerzo colaborativo que requirió una estrecha coordinación con los equipos de QA, desarrollo y los propios equipos de OXXO, y resultó en una mejora significativa en la eficiencia del proceso de retiro en tiendas.
+                                                      </p>
+                                                    <h5>Herramientas Utilizadas:</h5>
+                                                    <ul>
+                                                        <li>Figma</li>
+                                                        <li>Azure</li>
+                                                        <li>Metodología Scrum </li>
+                                                        <li>Blueprints para mapear el flujo y peticiones</li>
+                                                    </ul>
+                                                    <h5>Beneficios Obtenidos:</h5>
+                                                    <ul>
+                                                        <li>Simplificación del proceso de retiro para cajeros y usuarios.</li>
+                                                        <li>Reducción de errores y tiempos de espera en las filas de tiendas OXXO.</li>
+                                                        <li>Coordinación exitosa con múltiples equipos para asegurar una implementación efectiva y fluida.</li>
+                                                    </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle9" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_BBVA.jpg" alt="BBVA by Oxxo"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4>Retiro con código QR BBVA</h4>
+                                            <h6>OXXO</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+<!-- FIN FILA 3 -->
+<!-- FIN TODOS LOS PROYECTOS  -->
+                    </div>
+<!-- INICIO PROYECTOS UX UI -->                    
+					<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <!-- INICIO FILA 3 -->
+          <div class="container text-center">
+            <div class="row g-2">
+            <div class="col-6 ">
+                <div class="p-2 containerCard">
+                    <div class="modal modal-lg fade" id="exampleModalToggle10" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Autocobro by OXXO</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start textModal">
+                                    <img class="col-md-12" width="100%" src="assets/img/Autocobro.jpg" alt="Autocobro BY Oxxo">
+                                    <p>En mi rol actual en una consultora, mi cliente principal es OXXO, una tienda de conveniencia que está adaptando sistemas de autocobro para permitir a sus clientes realizar pagos de forma autónoma. Me uní al proyecto después del primer MVP, donde revisé el estado actual y comencé a identificar elementos clave para crear una línea gráfica coherente. Aplicando los principios heurísticos de Nielsen, realicé un análisis inicial para detectar problemas de usabilidad, pero enfrentamos limitaciones, como la necesidad de ajustar colores y contrastes en algunos botones. Esto llevó a una negociación con el equipo de desarrollo para implementar ajustes sin afectar significativamente los tiempos del proyecto.
+
+                                      Mi enfoque fue establecer una comunicación efectiva con los equipos para priorizar soluciones y mitigar riesgos de usabilidad. A través de un proceso colaborativo, logramos mitigar varios problemas, aunque algunos continúan, pero seguimos en un proceso de mejora continua.
+                                      
+                                      También estoy trabajando en la evolución de nuestro UI Kit, buscando hacerlo más escalable a un sistema de diseño completo. Aunque aún no se ha implementado del todo en el equipo de desarrollo, en nuestro equipo de diseño ha sido una herramienta clave para integrar nuevas funcionalidades, como el programa de lealtad, pagos de servicios y control de ventas de productos restringidos como alcohol.
+                                      </p>
+                                    <h5>Herramientas Utilizadas:</h5>
+                                    <ul>
+                                        <li>Figma</li>
+                                        <li>Azure</li>
+                                        <li>Metodología Scrum </li>
+                                    </ul>
+                                    <h5>Beneficios Obtenidos:</h5>
+                                    <ul>
+                                        <li>Mejora continua del sistema de autocobro con la mitigación de problemas de usabilidad.</li>
+                                        <li>Creación de una base sólida para la integración de nuevas funcionalidades a través del diseño centrado en el usuario.</li>
+                                        <li>Implementación efectiva de un UI Kit como primer paso hacia un sistema de diseño escalable.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <button data-bs-target="#exampleModalToggle10" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_autocobro.jpg" alt="Autocobro BY Oxxo"></button>
+                    <div class="overlay">
+                        <div class="textCard text-center">
+                            <h4>Autocobro</h4>
+                            <h6>OXXO</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 ">
+                <div class="p-2 containerCard">
+                    <div class="modal modal-lg fade" id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Proyecto retiro sin tarjeta código QR BBVA by OXXO</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start textModal">
+                                    <img class="col-md-12" width="100%" src="assets/img/BBVA.jpg" alt="BBVA by Oxxo">
+                                    <p>En este proyecto, colaboré en la implementación del servicio de retiro de efectivo mediante un código QR, desarrollado para la plataforma del banco BBVA y diseñado para ser utilizado en tiendas OXXO. El objetivo era ofrecer a los usuarios una forma más sencilla de retirar efectivo, eliminando la necesidad de ingresar números de tarjeta y montos manualmente, un proceso que a menudo generaba errores y filas largas.
+
+                                      Mi participación incluyó la planificación y diseño del flujo de pantallas en conjunto con el equipo de desarrollo, asegurando que tanto la tecnología como la experiencia del usuario estuvieran alineadas. Aplicamos la línea gráfica ya establecida por BBVA, pero adaptamos y añadimos elementos visuales que facilitaran el uso del sistema para los cajeros de tienda, quienes son nuestros usuarios clave en este proceso.
+                                      
+                                      Para garantizar una experiencia fluida y reducir errores, diseñamos una barra de progreso que mostraba la secuencia de los pasos a seguir, proporcionando visibilidad y retroalimentación en cada etapa. Además, utilizamos ilustraciones pictográficas para ejemplificar las acciones y aplicamos jerarquías claras en las cantidades y totales, de modo que la información fuera fácil de entender.
+                                      
+                                      Este proyecto fue un esfuerzo colaborativo que requirió una estrecha coordinación con los equipos de QA, desarrollo y los propios equipos de OXXO, y resultó en una mejora significativa en la eficiencia del proceso de retiro en tiendas.
+                                      </p>
+                                    <h5>Herramientas Utilizadas:</h5>
+                                    <ul>
+                                        <li>Figma</li>
+                                        <li>Azure</li>
+                                        <li>Metodología Scrum </li>
+                                        <li>Blueprints para mapear el flujo y peticiones</li>
+                                    </ul>
+                                    <h5>Beneficios Obtenidos:</h5>
+                                    <ul>
+                                        <li>Simplificación del proceso de retiro para cajeros y usuarios.</li>
+                                        <li>Reducción de errores y tiempos de espera en las filas de tiendas OXXO.</li>
+                                        <li>Coordinación exitosa con múltiples equipos para asegurar una implementación efectiva y fluida.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <button data-bs-target="#exampleModalToggle11" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_BBVA.jpg" alt="BBVA by Oxxo"></button>
+                    <div class="overlay">
+                        <div class="textCard text-center">
+                            <h4>Retiro con código QR BBVA</h4>
+                            <h6>OXXO</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-6 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle12" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Tienda Novartis</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start textModal">
+                                                    <img class="col-md-12" width="100%" src="assets/img/Tienda-Novartis.jpg" alt="Tienda Novartis">
+                                                    <p>La Tienda Novartis es una iniciativa de comercio electrónico diseñada para eliminar intermediarios en la adquisición de medicamentos. El objetivo principal fue mejorar la usabilidad de la plataforma, ya que no contaba con un presupuesto para pruebas con usuarios reales.</p>
+                                                    <h5>Actividades Realizadas:</h5>
+                                                    <ul>
+                                                      <li>Diagnóstico Heurístico: Realicé un diagnóstico heurístico para identificar problemas de usabilidad en la interfaz. Los principales errores visuales y de navegación fueron abordados mediante la creación de un UI Kit, con la intención de evolucionar hacia un sistema de diseño integral.</li>
+                                                      <li>Resolución de Problemas: Uno de los principales problemas identificados a través de llamadas al Call Center fue la falta de claridad en el proceso de entrega de facturas. Se desarrolló un Journey Map para mapear las interacciones del usuario con el servicio, revelando que en ninguna etapa del proceso se comunicaba al usuario que la factura sería enviada al momento de la entrega del medicamento. Dado que muchos medicamentos son costosos y están cubiertos por aseguradoras que requieren la factura para reembolsos, esta omisión era crítica.</li>
+                                                      <li>Mejoras Implementadas: Para solucionar este problema, se añadió información clara en el correo de confirmación del pedido y en la sección de Ayuda. Además, se capacitó al Call Center sobre el proceso de emisión de facturas, ya que dependía de la entrega final del producto para poder generar la factura 24 horas después del pago, evitando problemas en caso de devoluciones.</li>
+                                                      <li>Categorización de Productos: También se trabajó en la categorización de productos para facilitar la navegación y búsqueda de medicamentos.</li>
+                                                    </ul>
+                                                <h5>Herramientas Utilizadas:</h5>
+                                                <ul>
+                                                    <li>Adobe Photoshop</li>
+                                                    <li>Adobe XD</li>
+                                                    <li>Figma</li>
+                                                    <li>Jouney Maps</li>
+                                                </ul>
+                                                <h5>Beneficios Obtenidos:</h5>
+                                                <ul>
+                                                    <li>Mejora en la claridad del proceso de facturación, reduciendo las consultas al Call Center.</li>
+                                                    <li>Creación de una base para un sistema de diseño que mejoró la experiencia del usuario.</li>
+                                                </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle12" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_Tienda-Novartis.jpg" alt="Tienda Novartis"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4>Tienda Novartis</h4>
+                                            <h6>Novartis</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<!-- FIN FILA 3 -->
+          </div>
+<!-- FIN PROYECTOS UX UI --> 
+
+ <!-- INICIO PROYECTOS Diseño web --> 
+					<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+               <!-- INICIO FILA 1 -->
+               <div class="container text-center">
+                <div class="row g-2">
+                  <div class="col-6 ">
+                    <div class="p-2 containerCard ">
+                        <div class="modal modal-lg fade" id="exampleModalToggle13" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Buen Fin</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start textModal">
+                                    <img class="col-md-12" width="100%" src="assets/img/BuenFin2020.jpg" alt="Buen Fin 2020">
+                                    <p>Desarrollé, en conjunto con el equipo de Marketing, estrategias de comunicación efectivas y de fácil navegación, basadas en principios de usabilidad, para las campañas de El Buen Fin en 2018, 2019, y 2020. En 2019, implementé landings por categoría, resaltando las ofertas más importantes desde el lado del negocio, lo que optimizó la experiencia del usuario y facilitó el acceso a las promociones, contribuyendo a un crecimiento significativo.</p>
+                                    <h5>Herramientas Utilizadas:</h5>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe XD</li>
+                                    </ul>
+                                    <h5>Beneficios Obtenidos:</h5>
+                                    <ul>
+                                        <li>Aumento de 3,905% en el revenue.</li>
+                                        <li>98% del tráfico proveniente de SEO orgánico.</li>
+                                        <li>$1,953,884 generados en revenue de usuarios orgánicos.</li>
+                                        <li>44% de los usuarios interactuaron con las promociones más relevantes, según Hotjar.</li>
+                                    </ul>
+                                </div>
+                                
+                              </div>
+                            </div>
+                        </div>
+                        <button data-bs-target="#exampleModalToggle13" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_BuenFin2020.jpg" alt="Buen Fin 2020"></button>
+                        <div class="overlay">
+                            <div class="textCard text-center">
+                               <h4> Buen Fin 2020</h4>
+                               <h6>BestBuy</h6>
+                            </div>
+                          </div>
+                
+                    </div>
+                  </div>
+                <div class="col-6 ">
+                    <div class="p-2 containerCard">
+                            <div class="modal modal-lg fade" id="exampleModalToggle14" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Back to School 2019</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start textModal">
+                                        <img class="col-md-12" width="100%" src="assets/img/BackToSchool_2019_ok.jpg" alt="BackToSchool 2019">
+                                        <p>Durante la campaña de Back to School 2019, desarrollé una landing page categorizada para comunicar nuestras promociones, permitiendo a los usuarios encontrar computadoras que se ajustaran a sus necesidades específicas. El enfoque se centró en mitigar el desgaste cognitivo de los clientes, alineando sus necesidades con los equipos disponibles, categorizándolos en básicas, profesionales, de diseño y gaming. Esta estrategia resultó en un aumento del 250% en sesiones y un incremento del 16% en el revenue comparado con el año anterior. El éxito se debió al monitoreo constante de ofertas y a la rotación estratégica de productos en la landing.</p>
+                                        <h5>Herramientas Utilizadas:</h5>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>Adobe Photoshop</li>
+                                            <li>Adobe XD</li>
+                                        </ul>
+                                        <h5>Beneficios Obtenidos:</h5>
+                                        <ul>
+                                            <li>Aumento de 16% en el revenue.</li>
+                                            <li>Sesiones: +250%</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <button data-bs-target="#exampleModalToggle14" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_BackToSchool2019.jpg" alt="BackToSchool 2019"></button>
+                            <div class="overlay">
+                                <div class="textCard text-center">
+                                   <h4> Back to School 2019</h4>
+                                   <h6>BestBuy</h6>
+                                </div>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="col-6 ">
+                    <div class="p-2 containerCard">
+                        <div class="modal modal-lg fade" id="exampleModalToggle15" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Hot Sale 2020</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start textModal">
+                                    <img class="col-md-12" width="100%" src="assets/img/HotSale2020.jpg" alt="Hot Sale 2020">
+                                    <p>Durante el Hot Sale 2019, desarrollé una landing page enfocada en mejorar la experiencia del usuario mediante la implementación de metodologías de UX y UI. El diseño se orientó al perfil del usuario, segmentando las ofertas por categorías para facilitar la búsqueda de productos según sus preferencias. Adicionalmente, se implementaron nuevos espacios para comunicar a más vendors, lo que resultó en un aumento del 114.97% en sesiones y un incremento del 75% en el revenue comparado con el año anterior en la categoría de Computadoras. También se lanzaron campañas de mailing que lograron un open rate 20% superior al del año anterior, y un aumento del 17% en el revenue.</p>
+                                    <h5>Herramientas Utilizadas:</h5>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe XD</li>
+                                    </ul>
+                                    <h5>Beneficios Obtenidos:</h5>
+                                    <ul>
+                                        <li>Revenue: +75% en la categoría de Computadoras</li>
+                                        <li>Sesiones: +250%</li>
+                                        <li>Open Rate: +20%</li>
+                                        <li>Revenue por Email: +17%</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <button data-bs-target="#exampleModalToggle15" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_HotSale2020.jpg" alt="Hot Sale 2020"></button>
+                        <div class="overlay">
+                            <div class="textCard text-center">
+                               <h4> Hot Sale 2020</h4>
+                               <h6>BestBuy</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                                <div class="p-2 containerCard">
+                                    <div class="modal modal-lg fade" id="exampleModalToggle16" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5 textModal" id="exampleModalToggleLabel">Medforum - Estrategia Digital para Profesionales de la Salud</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start textModal">
+                                                    <img class="col-md-12" width="100%" src="assets/img/Medforum.jpg" alt="Medforum">
+                                                    <p>Medforum es una estrategia digital diseñada para conectar de manera efectiva con los profesionales de la salud a través de diferentes plataformas, incluyendo un sitio web de cursos, un portal de contenido científico y eventos en vivo como congresos y charlas. Mi rol en esta iniciativa abarcó la gestión y desarrollo de contenidos para el sitio web informativo, utilizando un CMS Drupal 7, y la programación de cursos a través de Moodle. También me encargué de la creación y adaptación de mails masivos utilizando Salesforce, lo que implicó la colaboración con equipos globales para alinear la ejecución correcta y gestionar bases de datos sensibles, logrando un ahorro significativo al realizar la gestión internamente.</p>
+                                                <h5>Herramientas Utilizadas:</h5>
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>JavaScript</li>
+                                                    <li>Adobe Photoshop</li>
+                                                    <li>Figma</li>
+                                                    <li>Drupal 7</li>
+                                                    <li>Moodle</li>
+                                                    <li>Salesforce</li>
+                                                    <li>Coordinación global</li>
+                                                </ul>
+                                                <h5>Beneficios Obtenidos:</h5>
+                                                <ul>
+                                                    <li>Eficiencia operativa: Ahorro de $1,000 USD por cada mail masivo al realizar la gestión internamente con Salesforce.</li>
+                                                    <li>Mejor colaboración global: Coordinación efectiva con equipos internacionales para alinear la ejecución de campañas y el desarrollo de sitios web.</li>
+                                                </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <button data-bs-target="#exampleModalToggle16" data-bs-toggle="modal"><img width="100%" src="assets/img/Portada_Medforum.jpg" alt="Medforum"></button>
+                                    <div class="overlay">
+                                        <div class="textCard text-center">
+                                            <h4>Medforum</h4>
+                                            <h6>Novartis</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+<!-- FIN FILA 1 --> 
+
+
+          </div>
+				
+	<!-- FIN PROYECTOS Diseño web --> 		
+			
 		</section>
 
 
-		<section id="proyectos"  class="container">
-			<div class="row">
+       
+            <section id="habilidades" class="container text-center proyectos">
+                <h4 class="h4 ">Habilidades Blandas</h4>
+                <div class="row justify-content-md-center">
+                  <p class="col-md-11 text-start textoIntro ">
+                    Imagina que las habilidades blandas son como las herramientas esenciales para un campamento o una caminata por el bosque. Te ayudan a orientarte, a tomar decisiones y a avanzar con confianza en el camino. Aquí te comparto algunas de mis ‘herramientas’ favoritas:
+                  </p>
+                </div>
 
-				<h3>Proyectos:</h3>
-
-				<div class="card col s11 m4 ">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/img/labar.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator">Lab ar<i class="material-icons right">more_vert</i></span>
-						<p><i class="fa fa-github fa-lg"></i><a target="_blank" href="https://github.com/claussfrank/LabCar">This is a link</a></p>
-						<p><i class="fa fa-television fa-lg"></i><a target="_blank" href="https://claussfrank.github.io/LabCar/">This is a link</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title">Lab ar<i class="material-icons right">close</i></span>
-						<p>Réplica de un landing que  fue  entregado.</p>
-					</div>
-				</div>
-
-				<div class="card col s11 m4 ">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/img/lyft.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator">Lyft<i class="material-icons right">more_vert</i></span>
-						<p><i class="fa fa-github fa-lg"></i><a target="_blank" href="https://github.com/claussfrank/lyft_examen">This is a link</a></p>
-						<p><i class="fa fa-television fa-lg"></i><a target="_blank" href="https://claussfrank.github.io/lyft_examen/">This is a link</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title">Web Lyft<i class="material-icons right">close</i></span>
-						<p>Réplica de pagina <a> www.lyft.com </a>, se  realizó  gracias a trabajo  en  equipo.</p>
-					</div>
-				</div>
-
-				<div class="card col s11 m4 ">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/img/pokedex.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator">Pokedex<i class="material-icons right">more_vert</i></span>
-						<p><i class="fa fa-github fa-lg"></i><a target="_blank" href="https://github.com/claussfrank/Pokedex">This is a link</a></p>
-						<p><i class="fa fa-television fa-lg"></i><a target="_blank" href="https://claussfrank.github.io/Pokedex/">This is a link</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title ">Pokedex<i class="material-icons right">close</i></span>
-						<p>Página  que  conecta  a la  Api  que  contiene  las  características  de  los  pokemones, al cargarse la página,  muestra  los  pokemones  y  al  darle  click  al  nombre,  un  modal muestra  las  especificaciones  del  mismo,  gracias  a que  se  conecta  a la  api. 
-						</p>
-					</div>
-				</div>
-
-				<div class="card col s11 m4 ">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/img/listaDeTareas.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator ">Lista de Tareas<i class="material-icons right">more_vert</i></span>
-						<p><i class="fa fa-github fa-lg"></i><a target="_blank" href="https://github.com/claussfrank/Crear-Tareas-CRUD">This is a link</a></p>
-						<p><i class="fa fa-television fa-lg"></i><a target="_blank" href="https://claussfrank.github.io/Crear-Tareas-CRUD/">This is a link</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title ">Lista de Tareas<i class="material-icons right">close</i></span>
-						<p>Lista de  tareas  que  conecta  a una  api. Esta appWeb permite  eliminar y  ver  a detalle la tarea que  agregamos. </p>
-					</div>
-				</div>
-			</div>
-
-		</section> 
-
-		<section id="habilidades" class="container habilidades" >
-
-			<h3>Habilidades:</h3>
+                <div  class="row">
+                  
+                  <div class="card text-start col-3">
+                    <div class="card-body">
+                      <img src="assets/img/Icono-Habilidades_bota.svg" class="card-img-top" alt="Icono de Habilidades bota">
+                      <h5 class="card-title">Botas:</h5>
+                      <p class="card-text">Como un buen calzado, el trabajo en equipo es lo que te permite avanzar firmemente. Para mí, el trabajo en equipo se basa en el respeto, la escucha constante y el aprendizaje continuo. Siempre estoy abierta a nuevas ideas y a aprender de los demás.</p>
+                    </div>
+                  </div>
+                  <div class="card text-start col-3">
+                    <div class="card-body">
+                      <img src="assets/img/Icono-Habilidades_mapa.svg" class="card-img-top" alt="Icono de Habilidades mapa">
+                      <h5 class="card-title">Mapa:</h5>
+                      <p class="card-text">Un buen mapa te ayuda a analizar todos los aspectos del camino y de los equipos para lograr un objetivo común. No solo se trata de saber a dónde quieres llegar, sino también de entender por dónde ya has pasado y cuál es el próximo paso a tomar. En mi experiencia, el viaje es tan importante como la meta.</p>
+                    </div>
+                  </div>
+                
+                  <div class="card text-start col-3">
+                    <div class="card-body">
+                      <img src="assets/img/Icono-Habilidades_lampara.svg" class="card-img-top" alt="Icono de Habilidades lampara">
+                      <h5 class="card-title">Lámpara: </h5>
+                      <p class="card-text">Aprender nuevas cosas cada día es como encender una luz en la oscuridad. Nos guía, nos muestra el camino a seguir y, si nos equivocamos, nos ayuda a encontrar una nueva ruta.</p>
+                    </div>
+                  </div>
+                  <div class="card text-start col-3">
+                    <div class="card-body">
+                      <img src="assets/img/Icono-Habilidades_cuerda.svg" class="card-img-top" alt="Icono de Habilidade cuerda">
+                      <h5 class="card-title">Cuerda: </h5>
+                      <p class="card-text">La resiliencia es como una cuerda firme que te sostiene en las caídas. Saber que, aunque tropieces, puedes levantarte y seguir adelante, es fundamental. No importa cuántas veces caigas, lo importante es siempre continuar.</p>
+                    </div>
+                  </div>
+                
+                  
+                 
+                  <div aling="center" class="col-md-12"><img width="100%" src="assets/img/Campamento Habilidades.svg" alt="Ilustración Habilidades campamento"></div>
+                </div>
 
 
-			<div class="row">
-				<img alt="Photoshop" class="col s6 m2 offset-m2" src="assets/img/ps.png"> 
-				<img alt="Ilustrator" class="col s6 m2"src="assets/img/ai.png">
-				<img alt="InDesign" class="col s6 m2"src="assets/img/id.png">   
-				<img alt="After Effects" class="col s6 m2"src="assets/img/ae.png">
-			</div>
-			<div class="row">
-				<img alt="JavaScript" id="habilidadJS" class="habilidadJS col s6 m2" src="assets/img/js.png"> 
-				<img alt="CSS" class="col s6 m2"src="assets/img/css.png">
-				<img alt="Html" class="col s6 m2"src="assets/img/html.png">  
-				<img alt="Materialize" class="col s6 m2 " src="assets/img/materialize.png"> 
-				<img alt="Boostrap" class="col s6 m2" src="assets/img/bootstrap.png"> 
-				<img alt="Jquery" class="col s6 m2" src="assets/img/jquery.png"> 
-			</div>
-			<div class="row">	
-				<img alt="Sass" class="col s6 m2 offset-m1" src="assets/img/sass.png"> 
-				<img alt="Git" class="col s6 m2" src="assets/img/git.png"> 
-				<img alt="Git Hub" class="col s6 m2" src="assets/img/gitHub.png"> 
-				<img alt="Gulp" class="col s6 m2" src="assets/img/gulp.png"> 
-				<img alt="Node" class="col s6 m2" src="assets/img/node.png"> 
-			</div>
+		</section>
 
-		</section> 
+		
+					
 
-
-		<footer id="contacto" >
+		<footer class="footerIndex">
 			<div class="row center">
 
-				<div class="col m4">
-					<div class="row">
-						<a  class="col m12" target="_blank" href="https://github.com/claussfrank"><i class="fa fa-github fa-4x"></i></a>
-						<a class="col m12">github.com/claussfrank</a>
+				<div class="col ">
+					<div class="row text-center">
+						<a  class="col-md-12" target="_blank" href="https://github.com/claussfrank"><i class="fa fa-github fa-4x"></i></a>
+						<a class="col-md-12">github.com/claussfrank</a>
 					</div>
 				</div>
 
-				<div class="col m4">
+				<div class="col text-center">
 					<div class="row">
-						<a class="col m12"target="_blank" href="https://www.linkedin.com/in/claussfrank/"><i class="fa fa-linkedin-square fa-4x"></i></a>
-						<a class="col m12 ">linked-in</a>
+						<a class="col-md-12"target="_blank" href="https://www.linkedin.com/in/clauss-frank/"><i class="fa fa-linkedin-square fa-4x"></i></a>
+						<a class="col-md-12">linked-in</a>
 					</div>
-
 				</div>
 
-				<div class="col m4">
+				<div class="col text-center">
 					<div class="row">
-						<a class="col m12" target="_blank" href="clauss.frank@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
-						<a class="col m12 ">clauss.frank@gmail.com</a>
+						<a class="col-md-12" target="_blank" href="mailto:clauss.frank@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+						<a class="col-md-12">clauss.frank@gmail.com</a>
 					</div>
 				</div>
 
@@ -192,8 +889,13 @@
 		</footer>     
 
 		<script src="https://use.fontawesome.com/a52b638e62.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>    
-		<script src="js/app.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  -->
+		<script src="assets/js/app.js"></script>
+   
+	
+
+		
 	</body>
 </html>
