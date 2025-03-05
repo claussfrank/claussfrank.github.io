@@ -1,0 +1,116 @@
+@import 'animacion';
+
+h3 {
+	color: #68653A;
+	font-family:"centabel";
+}
+h5 {
+	color: #68653A;
+	font-family:"centabel";
+}
+h2 {
+	color: #68653A;
+	font-family:"centabel";
+
+}
+section > div >.card{
+	margin: 4%;
+	padding: 1%;
+	background-color: #e7e5e4;
+}
+.card-content > p > i{
+	margin: .5%;
+	color: #68653A;
+}
+.card-content > p > a{
+	margin: .5%;
+	color: #68653A;
+	font-family:"centabel";
+}
+.card-content > span{
+	margin: .5%;
+	color: #68653A;
+	font-family:"centabel";
+}
+.card-reveal{
+	color: #68653A;
+	font-family:"centabel";
+}
+
+#index{
+	background-image: url(../img/paisaje.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#acercaDeMi{
+	background-image: url(../img/paisajeDos.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	width: 100%;
+	height: 100%;
+	overflow-x:hidden;
+}
+
+#acercaDeMi > div > p{
+	padding: 3% 3%;
+	font-size: 16px;
+	text-align: justify;
+	color:#68653A;
+	font-family:"centabel";
+	font-weight: 300;
+	overflow-y: hidden;
+}
+
+.margintop-3{
+	margin-top:-10px;
+}
+
+
+/*
+#contacto{
+background-image: url(../assets/img/texturaFondo.png);
+background-repeat: no-repeat;
+background-size: cover;
+padding: 1%;
+}
+*/
+.footerIndex{
+	margin-top:100px;
+	
+}
+
+footer>div>div>div>a>i{
+	margin-top: 10px;
+	color:white;
+}
+
+footer>div>div>div>a{
+	color:white;
+	font-family:"centabel";
+	font-size: 14px;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family:"centabel";
+	src: url(../fonts/centabel.ttf) format('truetype');
+}
+
+@font-face {
+	font-family:"CaviarDreams";
+	src: url(../fonts/CaviarDreams.ttf) format('truetype');
+}
+
+@font-face {
+	font-family:"CaviarDreams_Bold";
+	src: url(../fonts/CaviarDreams_Bold.ttf) format('truetype');
+}
+
+
