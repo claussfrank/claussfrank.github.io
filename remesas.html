@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Remesas POS — ClaussFrank</title>
+	<link rel="shortcut icon" href="assets/img/iconoLogo.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="container">
+
+	<nav id="navbar" class="navbar sticky-top navClau">
+		<div class="container-fluid">
+			<a class="navbar-brand center" href="index.html"><img width="95%" src="assets/img/menuInicio.svg" alt="Inicio"></a>
+			<a class="navbar-brand" href="index.html#acercaDeMi"><img width="95%" src="assets/img/menuAcerca.svg" alt="Acerca de mi"></a>
+			<a class="navbar-brand" href="index.html#proyectos"><img width="95%" src="assets/img/menuProyectos.svg" alt="Proyectos"></a>
+			<a class="navbar-brand" href="index.html#habilidades"><img width="95%" src="assets/img/menuHabilidades.svg" alt="Habilidades Blandas"></a>
+		</div>
+	</nav>
+
+	<!-- HERO DEL CASO -->
+	<section class="row align-items-center py-4">
+		<div class="col-md-6">
+			<p class="case-eyebrow">Grupo Ti México · Cliente OXXO</p>
+			<h1 class="case-title">De un flujo confuso a un proceso claro: rediseño de Retiro de Remesas en XPOS</h1>
+			<p class="case-intro">
+				Rediseñé el flujo de Retiro de Remesas dentro del sistema XPOS de OXXO —una arquitectura mixta .NET + Delphi/VCL— después de identificar, vía reportes del PO y una investigación de campo propia como clienta, que los cajeros confundían mensajes de acción con mensajes de error y cancelaban la operación ante un formato largo y poco claro.
+			</p>
+			<dl class="case-meta">
+				<div>
+					<dt>Dominio</dt>
+					<dd>Retail / Transaccional (POS)</dd>
+				</div>
+				<div>
+					<dt>Duración</dt>
+					<dd>6 meses</dd>
+				</div>
+				<div>
+					<dt>Equipo</dt>
+					<dd>Diseñadora UX/UI (sola)</dd>
+				</div>
+				<div>
+					<dt>Rol</dt>
+					<dd>Diseño UX/UI end-to-end</dd>
+				</div>
+			</dl>
+		</div>
+		<div class="col-md-6">
+			<div class="case-hero-visual">
+				                    <img width="100%" src="assets/img/Int_Remesas.jpg" alt="Rediseño flujo Remesas">
+
+			</div>
+		</div>
+	</section>
+
+	<!-- EL SÍNTOMA Y LA CAUSA RAÍZ -->
+	<section class="case-section">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>El síntoma y la causa raíz</h2>
+				<p>
+					El servicio se iniciaba pero se abandonaba a medio camino. El equipo de diseño no tenía canal directo con los cajeros — todo pasaba a través del PO, quien reportaba que los mensajes de acción se confundían con mensajes de error.
+				</p>
+				<p>
+					Para validarlo de primera mano, acudí a una tienda OXXO como clienta e intenté solicitar el servicio en tres ocasiones distintas. Confirmé lo que reportaba el PO: el formato era demasiado largo, confuso, y los pasos a seguir no quedaban claros ni para el cajero ni para mí como clienta.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- RESTRICCIONES Y DECISIÓN -->
+	<section class="case-section">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Diseñar dentro de un sistema que no se podía romper</h2>
+				<p>
+					Antes de proponer cualquier cambio visual, mapeé la arquitectura modular completa del sistema (XPOS en .NET + servicios transaccionales en Delphi/VCL). El motor VCL no soporta colores HEX, y cualquier cambio no podía interrumpir la continuidad transaccional en producción.
+				</p>
+				<div class="trade-grid">
+					<div>
+						<h6>Lo que se descartó</h6>
+						<p>Presenté una propuesta con un paso adicional en el flujo, mejor distribución y más claridad — pero implicaba un reto técnico más complejo. El equipo priorizó viabilidad técnica sobre la solución de mayor claridad posible.</p>
+					</div>
+					<div>
+						<h6>El trade-off</h6>
+						<p>El sistema no podía alcanzar la misma calidad visual que un stack moderno. Diseñé la versión más cercana posible dentro de esa limitación, sacrificando pulido visual a cambio de compatibilidad garantizada.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- RESULTADO -->
+	<section class="case-section">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Resultado</h2>
+				<p>
+					El proyecto se entregó con documentación formal y heurísticas de Nielsen y principios de Gestalt aplicados de forma rigurosa. Salí del proyecto en fase de pruebas, antes de la medición de resultados en producción.
+				</p>
+				<div class="case-note">
+					Este caso no tiene una cifra de impacto que mostrar, y prefiero decirlo directamente en vez de inflarlo: se sostiene por el rigor del diagnóstico y de la decisión de diseño bajo restricciones técnicas reales, no por un número.
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- LECCIÓN APRENDIDA -->
+	<section class="case-section">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Lo que aprendí</h2>
+				<p>
+					Cuando el único canal de retroalimentación es un intermediario, hay cosas que no vas a ver hasta que las vives tú misma. Esa fue la razón detrás de ir a cobrar mi propia remesa como clienta — y también me dejó ver áreas de oportunidad adicionales que quedaron fuera del alcance de este proyecto.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- SUBMENÚ: navegar directo a otro proyecto sin volver a la sección de Proyectos -->
+	<nav class="case-projects-nav">
+		<p class="case-projects-nav-label">Otros proyectos</p>
+		<div class="case-projects-nav-list">
+			<a href="remesas.html" class="case-projects-nav-item is-current">Remesas POS</a>
+			<a href="autocobro.html" class="case-projects-nav-item">Autocobro — Look &amp; Feel</a>
+			<a href="buen-fin.html" class="case-projects-nav-item">Buen Fin 2019</a>
+			<a href="tienda-novartis.html" class="case-projects-nav-item">Tienda Novartis</a>
+		</div>
+	</nav>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>
