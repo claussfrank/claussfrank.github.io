@@ -129,7 +129,11 @@ section{
   100% {
     margin-left: -800px; } }
 
+h1 {
 
+  font-family: "centabel"; 
+  font-size: 5.6em;
+}
 .h2 {
   color: #F9F7F3 ;
   font-family: "centabel"; 
@@ -141,7 +145,7 @@ section{
   .h4 {
     color: #20292D;
     font-family: "centabel"; 
-    font-size: 4em;
+    font-size: 4.5em;
     padding: 4% 0;
   }
   
@@ -331,4 +335,266 @@ button{
 
 .textModal p{
   margin-top: 3%;
+}
+/* ===== Ajustes Fase 04 — tarjetas de proyecto como enlaces a páginas propias ===== */
+.cardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.cardLink:hover {
+  color: inherit;
+}
+.cardLink img {
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+.cardPlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #0C1D35;
+  border: 1px dashed #e2a561;
+  border-radius: 8px 8px 0 0;
+  color: #e2a561;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "centabel";
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}
+/* Gancho fijo debajo de la imagen — reemplaza el .overlay que solo aparecía en hover,
+   para que el título y el cliente siempre se vean sin necesidad de pasar el mouse. */
+.cardCaption {
+  background: #F9F7F3;
+  border-radius: 0 0 8px 8px;
+  padding: 1rem 1.1rem 1.2rem;
+}
+.cardCaption h4 {
+  font-family: "centabel";
+  font-size: 1.6rem;
+  color: #20292D;
+  margin-bottom: 0.35rem;
+}
+.cardCaption h6 {
+  font-family: "CaviarDreams";
+  font-size: 1.2rem;
+  color: #20292D;
+  opacity: 0.7;
+  margin: 0 0 4% 0;
+}
+
+
+/* ===== Fase 04 — Páginas de caso de estudio (Remesas, Autocobro, Buen Fin, Tienda Novartis) =====
+   Movido aquí desde <style> inline para mantener un solo lugar de estilos.
+   Nota: el fondo global de tu sitio (html{background-color:#0C1D35}) es oscuro,
+   por eso todo el texto de estas páginas usa #F9F7F3 (crema) para contraste. */
+
+.case-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #F9F7F3;
+  opacity: 0.6;
+  margin-bottom: 0.75rem;
+}
+.case-title {
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  font-family: "centabel";
+  color: #F9F7F3;
+}
+.case-intro {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #F9F7F3;
+  margin-bottom: 2rem;
+  max-width: 46ch;
+  font-family: "CaviarDreams";
+}
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+  max-width: 46ch;
+}
+.case-meta dt {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #F9F7F3;
+  opacity: 0.6;
+  margin-bottom: 0.15rem;
+}
+.case-meta dd {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  color: #F9F7F3;
+}
+.case-hero-visual {
+  background: #0C1D35;
+  /* border: 1px dashed #e2a561; */
+  border-radius: 12px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2a561;
+  text-align: center;
+  /* padding: 2rem; */
+}
+.case-hero-visual img{
+
+  border-radius: 16px;
+}
+.case-hero-visual .placeholder-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  border-radius: 8px;
+  padding: 1.5rem 1.25rem;
+}
+.case-section {
+  padding: 3.5rem 0;
+  border-top: 1px solid rgba(249, 247, 243, 0.15);
+  color: #F9F7F3;
+}
+.case-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "centabel";
+  color: #F9F7F3;
+}
+.case-section h6 {
+  font-family: "centabel";
+  color: #e2a561;
+  font-size: 1rem;
+}
+.case-section p, .case-section li {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #F9F7F3;
+  font-family: "CaviarDreams";
+}
+.case-note {
+  background: #F9F7F3;
+  border-left: 3px solid #e2a561;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #20292D;
+  margin-top: 1.25rem;
+  font-family: "CaviarDreams";
+}
+.trade-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.case-projects-nav {
+  border-top: 1px solid rgba(249, 247, 243, 0.15);
+  padding: 2.5rem 0 3rem;
+  margin-top: 1rem;
+}
+.case-projects-nav-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #F9F7F3;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+.case-projects-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.case-projects-nav-item {
+  font-family: "CaviarDreams";
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #F9F7F3;
+  border: 1px solid #75848a;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  opacity: 0.65;
+  transition: opacity .2s ease, background .2s ease;
+}
+.case-projects-nav-item:hover {
+  opacity: 1;
+  background: #F9F7F3;
+  color: #20292D;
+}
+.case-projects-nav-item.is-current {
+  opacity: 1;
+  background: #0C1D35;
+  color: #e2a561;
+  border-color: #F9F7F3;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .case-meta { grid-template-columns: 1fr 1fr; }
+  .trade-grid { grid-template-columns: 1fr; }
+  .case-hero-visual { min-height: 260px; margin-top: 2rem; }
+}
+
+/* ===== Cierre / CTA en index.html ===== */
+.cierre {
+  background: rgba(250, 250, 250, .08);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.cierre h4 {
+  color: #F9F7F3;
+  font-family: "centabel";
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.cierre p {
+  color: #F9F7F3;
+  font-family: "CaviarDreams";
+  font-size: 1.1rem;
+  max-width: 55ch;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+.cierre-acciones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn-cierre {
+  font-family: "centabel";
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.btn-cierre:hover {
+  transform: translateY(-2px);
+}
+.btn-cierre-primario {
+  background: #e2a561;
+  color: #633001;
+}
+.btn-cierre-secundario {
+  background: transparent;
+  color: #F9F7F3;
+  border: 1px solid #F9F7F3;
+}
+.mgt-bot-5{
+  margin-top: 5%;
 }
