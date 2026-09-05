@@ -1,9 +1,19 @@
+:root {
+  --color-bg: #0C1D35;
+  --color-cream: #F9F7F3;
+  --color-dark: #20292D;
+  --color-accent: #e2a561;
+  --color-accent-dark: #633001;
+  --color-tab-border: #c38f54;
+}
+
 html{
   /* background-image: url(../img/paisaje-02.svg); */
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  background-position: center bottom; 
-  background-color: #0C1D35;
+  background-position: center bottom;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
 }
 section{
   margin:5% 0;
@@ -12,7 +22,7 @@ section{
   background: transparent;
 }
 .navClau {
-  /* background: #F9F7F3;
+  /* background: var(--color-cream);
   opacity: 1; */
   background: rgba(0, 0, 0, .0);
   border-radius: 0 0 8px 8px;}
@@ -135,15 +145,15 @@ h1 {
   font-size: 5.6em;
 }
 .h2 {
-  color: #F9F7F3 ;
+  color: var(--color-cream) ;
   font-family: "centabel"; 
   font-size: 5em;
 }
 .h3 {
-  color: #F9F7F3 ;
+  color: var(--color-cream) ;
   font-family: "centabel"; }
   .h4 {
-    color: #20292D;
+    color: var(--color-dark);
     font-family: "centabel"; 
     font-size: 4.5em;
     padding: 4% 0;
@@ -151,29 +161,29 @@ h1 {
   
 /* Proyectos */
 #proyectos .nav-tabs{
-   border-bottom: #c38f54;
+   border-bottom: var(--color-tab-border);
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
-  /* color:#633001; */
+  /* color:var(--color-accent-dark); */
   width: 100%;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-  background-color: #e2a561;
-  color:#633001;
+  background-color: var(--color-accent);
+  color:var(--color-accent-dark);
   width: 100%;
   height: 100%;
-  border-color: #c38f54;
+  border-color: var(--color-tab-border);
 }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-  color: #633001;
-  border-color: #c38f54;
-  background-color: #e2a561;
+  color: var(--color-accent-dark);
+  border-color: var(--color-tab-border);
+  background-color: var(--color-accent);
 }  
 
 .proyectos{
   background: rgba(250, 250, 250,.5);
-  /* background: #F9F7F3; */
+  /* background: var(--color-cream); */
   padding: 2% 0%;
 border-radius: 8px;}
 
@@ -183,7 +193,7 @@ border-radius: 8px;}
   font-size: 1.75rem; 
   font-weight: 500;}
   .nav-link {
-    color: #20292D;
+    color: var(--color-dark);
   }
 
 section > div > .card {
@@ -195,31 +205,29 @@ section > div > .card {
 
 .card-content > p > i {
   margin: .5%;
-  color: #20292D; }
+  color: var(--color-dark); }
 
 .card-content > p > a {
   margin: .5%;
-  color: #20292D;
+  color: var(--color-dark);
   font-family: "centabel"; }
 
 .card-content > span {
   margin: .5%;
-  color: #20292D;
+  color: var(--color-dark);
   font-family: "centabel"; }
 
 .card-reveal {
-  color: #20292D;
+  color: var(--color-dark);
   font-family: "centabel"; }
 
-/* #index {
-  background-image: url(../img/paisaje.svg);
+#inicio {
+
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: hidden;
-  overflow-x: hidden;
   width: 100%;
-  height: 100%; } */
+  height: 100%; }
 
 #acercaDeMi {
   
@@ -229,16 +237,18 @@ section > div > .card {
 
 #acercaDeMi > div > p {
   padding: 4%;
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-align: left;
-  color: #F9F7F3;
+  color: var(--color-cream);
   font-family: "centabel";
-  font-weight: 300;
   overflow-y: hidden; }
+
+#acercaDeMi > div > p > a{
+  color: var(--color-cream);}
 
 .textoIntro {
     padding:0 5% 5% 5%;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-family: "centabel";
     font-weight: 300;
     overflow-y: hidden; }
@@ -277,8 +287,6 @@ footer > div > div > div > a {
 @font-face {
   font-family: "CaviarDreams_Bold";
   src: url(../fonts/CaviarDreams_Bold.ttf) format("truetype"); }
-
-/*# sourceMappingURL=main.css.map */
 
 /* Adaptación mobile */
 @media only screen and (max-width: 1024px) {
@@ -352,10 +360,10 @@ button{
 .cardPlaceholder {
   width: 100%;
   aspect-ratio: 16 / 10;
-  background: #0C1D35;
-  border: 1px dashed #e2a561;
+  background: var(--color-bg);
+  border: 1px dashed var(--color-accent);
   border-radius: 8px 8px 0 0;
-  color: #e2a561;
+  color: var(--color-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,20 +375,20 @@ button{
 /* Gancho fijo debajo de la imagen — reemplaza el .overlay que solo aparecía en hover,
    para que el título y el cliente siempre se vean sin necesidad de pasar el mouse. */
 .cardCaption {
-  background: #F9F7F3;
+  background: var(--color-cream);
   border-radius: 0 0 8px 8px;
   padding: 1rem 1.1rem 1.2rem;
 }
-.cardCaption h4 {
+.cardCaption h3 {
   font-family: "centabel";
   font-size: 1.6rem;
-  color: #20292D;
+  color: var(--color-dark);
   margin-bottom: 0.35rem;
 }
 .cardCaption h6 {
   font-family: "CaviarDreams";
   font-size: 1.2rem;
-  color: #20292D;
+  color: var(--color-dark);
   opacity: 0.7;
   margin: 0 0 4% 0;
 }
@@ -388,15 +396,15 @@ button{
 
 /* ===== Fase 04 — Páginas de caso de estudio (Remesas, Autocobro, Buen Fin, Tienda Novartis) =====
    Movido aquí desde <style> inline para mantener un solo lugar de estilos.
-   Nota: el fondo global de tu sitio (html{background-color:#0C1D35}) es oscuro,
-   por eso todo el texto de estas páginas usa #F9F7F3 (crema) para contraste. */
+   Nota: el fondo global de tu sitio (html{background-color:var(--color-bg)}) es oscuro,
+   por eso todo el texto de estas páginas usa var(--color-cream) (crema) para contraste. */
 
 .case-eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #F9F7F3;
+  color: var(--color-cream);
   opacity: 0.6;
   margin-bottom: 0.75rem;
 }
@@ -406,12 +414,12 @@ button{
   line-height: 1.15;
   margin-bottom: 1.25rem;
   font-family: "centabel";
-  color: #F9F7F3;
+  color: var(--color-cream);
 }
 .case-intro {
   font-size: 1.05rem;
   line-height: 1.6;
-  color: #F9F7F3;
+  color: var(--color-cream);
   margin-bottom: 2rem;
   max-width: 46ch;
   font-family: "CaviarDreams";
@@ -427,7 +435,7 @@ button{
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   font-weight: 700;
-  color: #F9F7F3;
+  color: var(--color-cream);
   opacity: 0.6;
   margin-bottom: 0.15rem;
 }
@@ -435,17 +443,17 @@ button{
   font-size: 0.95rem;
   font-weight: 500;
   margin: 0;
-  color: #F9F7F3;
+  color: var(--color-cream);
 }
 .case-hero-visual {
-  background: #0C1D35;
-  /* border: 1px dashed #e2a561; */
+  background: var(--color-bg);
+  /* border: 1px dashed var(--color-accent); */
   border-radius: 12px;
   min-height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e2a561;
+  color: var(--color-accent);
   text-align: center;
   /* padding: 2rem; */
 }
@@ -464,33 +472,33 @@ button{
 .case-section {
   padding: 3.5rem 0;
   border-top: 1px solid rgba(249, 247, 243, 0.15);
-  color: #F9F7F3;
+  color: var(--color-cream);
 }
 .case-section h2 {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
   font-family: "centabel";
-  color: #F9F7F3;
+  color: var(--color-cream);
 }
 .case-section h6 {
   font-family: "centabel";
-  color: #e2a561;
+  color: var(--color-accent);
   font-size: 1rem;
 }
 .case-section p, .case-section li {
   font-size: 1rem;
   line-height: 1.65;
-  color: #F9F7F3;
+  color: var(--color-cream);
   font-family: "CaviarDreams";
 }
 .case-note {
-  background: #F9F7F3;
-  border-left: 3px solid #e2a561;
+  background: var(--color-cream);
+  border-left: 3px solid var(--color-accent);
   padding: 1rem 1.25rem;
   border-radius: 6px;
   font-size: 0.95rem;
-  color: #20292D;
+  color: var(--color-dark);
   margin-top: 1.25rem;
   font-family: "CaviarDreams";
 }
@@ -510,7 +518,7 @@ button{
   letter-spacing: 0.1em;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #F9F7F3;
+  color: var(--color-cream);
   opacity: 0.5;
   margin-bottom: 1rem;
 }
@@ -523,7 +531,7 @@ button{
   font-family: "CaviarDreams";
   font-size: 0.9rem;
   text-decoration: none;
-  color: #F9F7F3;
+  color: var(--color-cream);
   border: 1px solid #75848a;
   border-radius: 999px;
   padding: 0.45rem 1rem;
@@ -532,14 +540,14 @@ button{
 }
 .case-projects-nav-item:hover {
   opacity: 1;
-  background: #F9F7F3;
-  color: #20292D;
+  background: var(--color-cream);
+  color: var(--color-dark);
 }
 .case-projects-nav-item.is-current {
   opacity: 1;
-  background: #0C1D35;
-  color: #e2a561;
-  border-color: #F9F7F3;
+  background: var(--color-bg);
+  color: var(--color-accent);
+  border-color: var(--color-cream);
   pointer-events: none;
 }
 @media (max-width: 767px) {
@@ -555,14 +563,14 @@ button{
   padding: 3rem 2rem;
   text-align: center;
 }
-.cierre h4 {
-  color: #F9F7F3;
+.cierre h2 {
+  color: var(--color-cream);
   font-family: "centabel";
   font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 .cierre p {
-  color: #F9F7F3;
+  color: var(--color-cream);
   font-family: "CaviarDreams";
   font-size: 1.1rem;
   max-width: 55ch;
@@ -587,14 +595,41 @@ button{
   transform: translateY(-2px);
 }
 .btn-cierre-primario {
-  background: #e2a561;
-  color: #633001;
+  background: var(--color-accent);
+  color: var(--color-accent-dark);
 }
 .btn-cierre-secundario {
   background: transparent;
-  color: #F9F7F3;
-  border: 1px solid #F9F7F3;
+  color: var(--color-cream);
+  border: 1px solid var(--color-cream);
 }
 .mgt-bot-5{
   margin-top: 5%;
+}
+/* Placeholder de la 5ta tarjeta de Habilidades (Brújula) — ícono de Font Awesome
+   mientras se crea la ilustración a juego con bota/mapa/lámpara/cuerda. */
+.fa-compass {
+  color: var(--color-accent-dark);
+  margin: 8% 0;
+  display: block;
+}
+
+/* Animación de aparición al hacer scroll */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
