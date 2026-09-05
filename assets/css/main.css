@@ -1,0 +1,635 @@
+:root {
+  --color-bg: #0C1D35;
+  --color-cream: #F9F7F3;
+  --color-dark: #20292D;
+  --color-accent: #e2a561;
+  --color-accent-dark: #633001;
+  --color-tab-border: #c38f54;
+}
+
+html{
+  /* background-image: url(../img/paisaje-02.svg); */
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center bottom;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+section{
+  margin:5% 0;
+}
+.container {
+  background: transparent;
+}
+.navClau {
+  /* background: var(--color-cream);
+  opacity: 1; */
+  background: rgba(0, 0, 0, .0);
+  border-radius: 0 0 8px 8px;}
+/*animacion de nubes*/
+#clouds {
+  padding: 0px 0; }
+
+/*Time to finalise the cloud shape*/
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: relative; }
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff; 
+  /* background: rgba(29, 63, 77, .6); */
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg); }
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px; }
+
+/*Time to animate*/
+@media handheld and (max-width: 20em), screen and (max-width: 30em) {
+  .cloud {
+    display: none; } }
+.x1 {
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite; }
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  left: 200px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6;
+  /*opacity proportional to the size*/
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite; }
+
+.x3 {
+  left: -250px;
+  top: -100px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite; }
+
+.x4 {
+  left: 470px;
+  top: -150px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite; }
+
+.x5 {
+  left: -150px;
+  top: -50px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite; }
+
+@-webkit-keyframes moveclouds {
+  0% {
+    margin-left: 800px; }
+  100% {
+    margin-left: -800px; } }
+@-moz-keyframes moveclouds {
+  0% {
+    margin-left: 800px; }
+  100% {
+    margin-left: -800px; } }
+@-o-keyframes moveclouds {
+  0% {
+    margin-left: 800px; }
+  100% {
+    margin-left: -800px; } }
+
+h1 {
+
+  font-family: "centabel"; 
+  font-size: 5.6em;
+}
+.h2 {
+  color: var(--color-cream) ;
+  font-family: "centabel"; 
+  font-size: 5em;
+}
+.h3 {
+  color: var(--color-cream) ;
+  font-family: "centabel"; }
+  .h4 {
+    color: var(--color-dark);
+    font-family: "centabel"; 
+    font-size: 4.5em;
+    padding: 4% 0;
+  }
+  
+/* Proyectos */
+#proyectos .nav-tabs{
+   border-bottom: var(--color-tab-border);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+  /* color:var(--color-accent-dark); */
+  width: 100%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: var(--color-accent);
+  color:var(--color-accent-dark);
+  width: 100%;
+  height: 100%;
+  border-color: var(--color-tab-border);
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  color: var(--color-accent-dark);
+  border-color: var(--color-tab-border);
+  background-color: var(--color-accent);
+}  
+
+.proyectos{
+  background: rgba(250, 250, 250,.5);
+  /* background: var(--color-cream); */
+  padding: 2% 0%;
+border-radius: 8px;}
+
+.tabProyectos {
+  
+  font-family: "centabel";
+  font-size: 1.75rem; 
+  font-weight: 500;}
+  .nav-link {
+    color: var(--color-dark);
+  }
+
+section > div > .card {
+  margin: 4%;
+  padding: 1%;
+  background-color: #e7e5e4;
+  font-family: "centabel"; }
+
+
+.card-content > p > i {
+  margin: .5%;
+  color: var(--color-dark); }
+
+.card-content > p > a {
+  margin: .5%;
+  color: var(--color-dark);
+  font-family: "centabel"; }
+
+.card-content > span {
+  margin: .5%;
+  color: var(--color-dark);
+  font-family: "centabel"; }
+
+.card-reveal {
+  color: var(--color-dark);
+  font-family: "centabel"; }
+
+#inicio {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%; }
+
+#acercaDeMi {
+  
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+#acercaDeMi > div > p {
+  padding: 4%;
+  font-size: 1.4em;
+  text-align: left;
+  color: var(--color-cream);
+  font-family: "centabel";
+  overflow-y: hidden; }
+
+#acercaDeMi > div > p > a{
+  color: var(--color-cream);}
+
+.textoIntro {
+    padding:0 5% 5% 5%;
+    font-size: 1.4em;
+    font-family: "centabel";
+    font-weight: 300;
+    overflow-y: hidden; }
+
+.margintop-3 {
+  margin-top: -10px; }
+
+/*
+#contacto{
+background-image: url(../assets/img/texturaFondo.png);
+background-repeat: no-repeat;
+background-size: cover;
+padding: 1%;
+}
+*/
+.footerIndex {
+  margin: 10%;
+  }
+
+footer > div > div > div > a > i {
+  margin-top: 10px;
+  color: white; }
+
+footer > div > div > div > a {
+  color: white;
+  font-family: "centabel";
+  font-size: 14px;
+  font-weight: 500; }
+
+@font-face {
+  font-family: "centabel";
+  src: url(../fonts/centabel.ttf) format("truetype"); }
+@font-face {
+  font-family: "CaviarDreams";
+  src: url(../fonts/CaviarDreams.ttf) format("truetype"); }
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url(../fonts/CaviarDreams_Bold.ttf) format("truetype"); }
+
+/* Adaptación mobile */
+@media only screen and (max-width: 1024px) {
+  .navClau {display: none;}
+  .col-8 {width: 100%;} 
+  .col-6 {width: 100%;}
+  .col-4 {width: 100%;}
+  section > div > .card {
+    width: 75%; }
+
+}
+
+button{
+  border: none;
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(250, 250, 250,.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.containerCard {
+  position: relative;
+  
+}
+.containerCard:hover .overlay {
+  height: 100px;
+}
+
+.textCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: "centabel";
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+} 
+.textModal{
+  font-family: "centabel";
+}
+
+.textModal p{
+  margin-top: 3%;
+}
+/* ===== Ajustes Fase 04 — tarjetas de proyecto como enlaces a páginas propias ===== */
+.cardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.cardLink:hover {
+  color: inherit;
+}
+.cardLink img {
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+.cardPlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--color-bg);
+  border: 1px dashed var(--color-accent);
+  border-radius: 8px 8px 0 0;
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "centabel";
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}
+/* Gancho fijo debajo de la imagen — reemplaza el .overlay que solo aparecía en hover,
+   para que el título y el cliente siempre se vean sin necesidad de pasar el mouse. */
+.cardCaption {
+  background: var(--color-cream);
+  border-radius: 0 0 8px 8px;
+  padding: 1rem 1.1rem 1.2rem;
+}
+.cardCaption h3 {
+  font-family: "centabel";
+  font-size: 1.6rem;
+  color: var(--color-dark);
+  margin-bottom: 0.35rem;
+}
+.cardCaption h6 {
+  font-family: "CaviarDreams";
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  opacity: 0.7;
+  margin: 0 0 4% 0;
+}
+
+
+/* ===== Fase 04 — Páginas de caso de estudio (Remesas, Autocobro, Buen Fin, Tienda Novartis) =====
+   Movido aquí desde <style> inline para mantener un solo lugar de estilos.
+   Nota: el fondo global de tu sitio (html{background-color:var(--color-bg)}) es oscuro,
+   por eso todo el texto de estas páginas usa var(--color-cream) (crema) para contraste. */
+
+.case-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-cream);
+  opacity: 0.6;
+  margin-bottom: 0.75rem;
+}
+.case-title {
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  font-family: "centabel";
+  color: var(--color-cream);
+}
+.case-intro {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-cream);
+  margin-bottom: 2rem;
+  max-width: 46ch;
+  font-family: "CaviarDreams";
+}
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+  max-width: 46ch;
+}
+.case-meta dt {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--color-cream);
+  opacity: 0.6;
+  margin-bottom: 0.15rem;
+}
+.case-meta dd {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-cream);
+}
+.case-hero-visual {
+  background: var(--color-bg);
+  /* border: 1px dashed var(--color-accent); */
+  border-radius: 12px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  text-align: center;
+  /* padding: 2rem; */
+}
+.case-hero-visual img{
+
+  border-radius: 16px;
+}
+.case-hero-visual .placeholder-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  border-radius: 8px;
+  padding: 1.5rem 1.25rem;
+}
+.case-section {
+  padding: 3.5rem 0;
+  border-top: 1px solid rgba(249, 247, 243, 0.15);
+  color: var(--color-cream);
+}
+.case-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "centabel";
+  color: var(--color-cream);
+}
+.case-section h6 {
+  font-family: "centabel";
+  color: var(--color-accent);
+  font-size: 1rem;
+}
+.case-section p, .case-section li {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-cream);
+  font-family: "CaviarDreams";
+}
+.case-note {
+  background: var(--color-cream);
+  border-left: 3px solid var(--color-accent);
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  margin-top: 1.25rem;
+  font-family: "CaviarDreams";
+}
+.trade-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.case-projects-nav {
+  border-top: 1px solid rgba(249, 247, 243, 0.15);
+  padding: 2.5rem 0 3rem;
+  margin-top: 1rem;
+}
+.case-projects-nav-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-cream);
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+.case-projects-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.case-projects-nav-item {
+  font-family: "CaviarDreams";
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-cream);
+  border: 1px solid #75848a;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  opacity: 0.65;
+  transition: opacity .2s ease, background .2s ease;
+}
+.case-projects-nav-item:hover {
+  opacity: 1;
+  background: var(--color-cream);
+  color: var(--color-dark);
+}
+.case-projects-nav-item.is-current {
+  opacity: 1;
+  background: var(--color-bg);
+  color: var(--color-accent);
+  border-color: var(--color-cream);
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .case-meta { grid-template-columns: 1fr 1fr; }
+  .trade-grid { grid-template-columns: 1fr; }
+  .case-hero-visual { min-height: 260px; margin-top: 2rem; }
+}
+
+/* ===== Cierre / CTA en index.html ===== */
+.cierre {
+  background: rgba(250, 250, 250, .08);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.cierre h2 {
+  color: var(--color-cream);
+  font-family: "centabel";
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.cierre p {
+  color: var(--color-cream);
+  font-family: "CaviarDreams";
+  font-size: 1.1rem;
+  max-width: 55ch;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+.cierre-acciones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn-cierre {
+  font-family: "centabel";
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.btn-cierre:hover {
+  transform: translateY(-2px);
+}
+.btn-cierre-primario {
+  background: var(--color-accent);
+  color: var(--color-accent-dark);
+}
+.btn-cierre-secundario {
+  background: transparent;
+  color: var(--color-cream);
+  border: 1px solid var(--color-cream);
+}
+.mgt-bot-5{
+  margin-top: 5%;
+}
+/* Placeholder de la 5ta tarjeta de Habilidades (Brújula) — ícono de Font Awesome
+   mientras se crea la ilustración a juego con bota/mapa/lámpara/cuerda. */
+.fa-compass {
+  color: var(--color-accent-dark);
+  margin: 8% 0;
+  display: block;
+}
+
+/* Animación de aparición al hacer scroll */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
