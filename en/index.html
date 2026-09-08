@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>ClaussFrank</title>
+		<meta name="description" content="Claudia Franco, UX/UI Designer, Web Designer and Graphic Designer. Product design portfolio.">
+		<link rel="canonical" href="https://claussfrank.github.io/en/">
+		<link rel="alternate" hreflang="es" href="https://claussfrank.github.io/">
+		<link rel="alternate" hreflang="en" href="https://claussfrank.github.io/en/">
+		<link rel="alternate" hreflang="x-default" href="https://claussfrank.github.io/">
+		<link rel="shortcut icon" href="/assets/img/iconoLogo.png">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script>
+		/* Espeja la home en español: si la persona ya eligió español, la
+		   devolvemos. Nunca al revés, para respetar que haya entrado a /en/. */
+		(function () {
+			try {
+				if (localStorage.getItem("cf-lang") === "es") { location.replace("/"); }
+			} catch (e) {}
+		})();
+	</script>
+	</head>
+	<body  class="container ">
+		<a class="visually-hidden-focusable" href="#inicio">Skip to main content</a>
+		<nav id="navbar" class="navbar sticky-top navClau" aria-label="Main navigation">
+			<div class="container-fluid">
+			  <a class="navbar-brand center" href="#"><img width="95%" src="/assets/img/menuInicio.svg" alt="Home"></a>
+			  <a class="navbar-brand" href="#acercaDeMi"><img width="95%" src="/assets/img/menuAbout.svg" alt="About Me"></a>
+			  <a class="navbar-brand" href="#proyectos"><img width="95%" src="/assets/img/menuWork.svg" alt="Work"></a>
+			  <a class="navbar-brand" href="#habilidades"><img width="95%" src="/assets/img/menuSkills.svg" alt="Soft Skills"></a>
+
+			</div>
+		</nav>	
+		<section id="inicio" >
+			<div id="clouds" >
+					<!-- Nubes -->
+					<div class="cloud x1 row"></div>
+                    <div class="row align-items-center">
+                        <div class="col-md-8 text-center reveal-on-scroll">
+                            <h1 class="h2">Claudia Franco</h1>
+                            <p class="h3">UX / UI Designer | Web Designer | Graphic Designer</p>
+                        </div>
+                        <div class="col-md-4 reveal-on-scroll">
+                            <img src="/assets/img/luna.svg" alt="moon">
+                        </div>
+                    </div>
+					
+					<!-- Nubes en movimiento -->
+					<div class="cloud x2"></div>
+					<div class="cloud x3"></div>
+					<div class="cloud x4"></div>
+					<div class="cloud x5"></div>
+
+				</div>
+		</section>
+		
+		
+		 
+
+		<section id="acercaDeMi">
+						<h2 class="visually-hidden">About me</h2>
+						<div class="row align-items-center">
+							<img class="col-md-4 text-left reveal-on-scroll" src="/assets/img/Clau-F.svg" alt="Illustration of Claudia Franco">
+							<p class="col-md-8 text-left reveal-on-scroll">
+                You have probably seen plenty of portfolios today. I would rather not repeat what they all say, so here it is straight: I am Clau, a UX/UI designer who also understands the technology she works with. If you would rather go straight to the work, <a href="#proyectos">here are my projects</a>. But if you stay a moment, let me tell you how I think about what I do.
+                <br><br>
+                Every project is a different expedition. Some call for more analysis and patience; others, because of the timeline, call for persuasion — or for going out to find the truth yourself when the official channel is not enough. What never changes is the destination: that the person using what I design solves their problem through technology, with no unnecessary burden and no avoidable errors, and that this works for the business too.
+                <br><br>
+                To keep getting to know me, picture yourself at an outdoor camp. Every trail you see below is an expedition I have already walked.
+							</p>           
+						</div>
+		</section>
+
+		<section id="proyectos" class="container text-center proyectos">
+            <h2 class="h4 ">Work</h2>
+            <div class="row justify-content-md-center">
+              <p class="col-md-11 text-start textoIntro reveal-on-scroll">
+                These are some of the trails I have explored. No two followed the same route, and on several of them I did not have all the answers at the start — but I always learned as I went.
+              </p>
+            </div>
+
+           
+            <div class="container">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                <!-- PROYECTO 1: Remesas POS -->
+                <div class="col reveal-on-scroll">
+                  <a href="remesas.html" class="cardLink">
+                   
+                    <img width="100%" src="/assets/img/Portada_Remesas.jpg" alt="Money transfer flow redesign">
+                    <div class="cardCaption text-start">
+                      <h3>From a confusing flow to a clear process</h3>
+                      <h6>Money Transfer Withdrawal · OXXO / Grupo Ti México</h6>
+                      <span class="btn-cierre btn-cierre-primario" aria-hidden="true">View case</span>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- PROYECTO 2: Autocobro - Nuevo Look & Feel -->
+                <div class="col reveal-on-scroll">
+                  <a href="autocobro.html" class="cardLink">
+                    <img width="100%" src="/assets/img/Portada_autocobro_ok.jpg" alt="OXXO self-checkout">
+                    <div class="cardCaption text-start">
+                      <h3>A new Look &amp; Feel</h3>
+                      <h6 >Autocobro self-checkout · OXXO / Grupo Ti México</h6>
+                      <span class="btn-cierre btn-cierre-primario" aria-hidden="true">View case</span>
+
+
+                    </div>
+                  </a>
+                </div>
+
+                <!-- PROYECTO 3: Buen Fin 2019 -->
+                <div class="col reveal-on-scroll">
+                  <a href="buen-fin.html" class="cardLink">
+                    <img width="100%" src="/assets/img/Portada_BuenFin2019_ok.jpg" alt="Buen Fin 2019">
+                    <div class="cardCaption text-start">
+                      <h3>+3,905% revenue with a category-based landing page</h3>
+                      <h6>Buen Fin 2019 · Best Buy México</h6>
+                      <span class="btn-cierre btn-cierre-primario" aria-hidden="true">View case</span>
+
+                    </div>
+                  </a>
+                </div>
+
+                <!-- PROYECTO 4: Tienda Novartis -->
+                <div class="col reveal-on-scroll">
+                  <a href="tienda-novartis.html" class="cardLink">
+                    <img width="100%" src="/assets/img/Portada_Tienda-Novartis.jpg" alt="Tienda Novartis">
+                    <div class="cardCaption text-start">
+                      <h3>The diagnosis nobody had run</h3>
+                      <h6>Tienda Novartis</h6>
+                      <span class="btn-cierre btn-cierre-primario" aria-hidden="true">View case</span>
+
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+		</section>
+
+
+
+
+       
+            <section id="habilidades" class="container text-center proyectos">
+                <h2 class="h4 ">Soft Skills</h2>
+                <div class="row justify-content-md-center">
+                  <p class="col-md-11 text-start textoIntro ">
+                    Whatever the destination, there are tools I always carry in my backpack. These are the ones I use most:
+                  </p>
+                </div>
+
+                <div class="container">
+                  <div class="row justify-content-center g-4">
+
+                    <div class="col-12 reveal-on-scroll">
+                      <div class="card text-start">
+                        <div class="row align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="/assets/img/Icono-Habilidades_bota.svg" class="img-fluid rounded-start" alt="Soft skills icon: boot">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Boots:</h5>
+                              <p class="card-text">Like a good pair of shoes, teamwork is what lets you move forward on solid ground. For me, teamwork rests on respect, listening constantly and learning continuously. I am always open to new ideas and to learning from the people around me.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 reveal-on-scroll">
+                      <div class="card text-start">
+                        <div class="row align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="/assets/img/Icono-Habilidades_mapa.svg" class="img-fluid rounded-start" alt="Soft skills icon: map">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Map:</h5>
+                              <p class="card-text">A good map helps you read every aspect of the route and of the teams walking it toward a shared goal. It is not only about knowing where you want to arrive, but also about understanding where you have already been and what the next step is. In my experience, the journey matters as much as the destination.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 reveal-on-scroll">
+                      <div class="card text-start">
+                        <div class="row align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="/assets/img/Icono-Habilidades_lampara.svg" class="img-fluid rounded-start" alt="Soft skills icon: lantern">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Lantern: </h5>
+                              <p class="card-text">Learning something new every day is like lighting a lamp in the dark. It guides us, it shows us the path ahead, and when we get it wrong, it helps us find a new route.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 reveal-on-scroll">
+                      <div class="card text-start">
+                        <div class="row align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="/assets/img/Icono-Habilidades_cuerda.svg" class="img-fluid rounded-start" alt="Soft skills icon: rope">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Rope: </h5>
+                              <p class="card-text">Resilience is like a firm rope that holds you when you fall. Knowing that even if you stumble you can get back up and keep going is essential. It does not matter how many times you fall — what matters is always carrying on.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 reveal-on-scroll">
+                      <div class="card text-start">
+                        <div class="row align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="/assets/img/Icono-Habilidades_brujula.png" class="img-fluid rounded-start" alt="Soft skills icon: compass">
+
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Compass:</h5>
+                              <p class="card-text">Knowing what each member of the expedition does is what lets you understand how to support them better. Knowing your own path is not enough — understanding everyone else's is what keeps the team moving in the same direction.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 text-center reveal-on-scroll"><img width="100%" src="/assets/img/Campamento Habilidades.svg" alt="Illustration: soft skills camp"></div>
+                  </div>
+                </div>
+
+
+		</section>
+
+		
+					
+
+
+		<section id="cierre" class="container text-center">
+			<div class="cierre reveal-on-scroll">
+				<h2>Liked what you saw?</h2>
+				<p>
+					Every expedition has made me better at the next one — and I would love for the next one to be something we build together. If you have questions about any of these projects, I am happy to answer them directly.
+				</p>
+				<div class="cierre-acciones">
+					<a class="btn-cierre btn-cierre-primario" href="mailto:clauss.frank@gmail.com?subject=Let%27s%20talk">Send me an email</a>
+					<a class="btn-cierre btn-cierre-secundario" href="tel:+525545503063">Call me</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footerIndex">
+			<div class="row center">
+
+				<div class="col reveal-on-scroll">
+					<div class="row text-center">
+						<a class="col-md-12" target="_blank" rel="noopener noreferrer" href="https://github.com/claussfrank"><i class="fa-brands fa-github fa-4x" aria-hidden="true"></i></a>
+						<a class="col-md-12" target="_blank" rel="noopener noreferrer" href="https://github.com/claussfrank">github.com/claussfrank</a>
+					</div>
+				</div>
+
+				<div class="col text-center reveal-on-scroll">
+					<div class="row">
+						<a class="col-md-12" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/clauss-frank/"><i class="fa-brands fa-linkedin fa-4x" aria-hidden="true"></i></a>
+						<a class="col-md-12" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/clauss-frank/">linked-in</a>
+					</div>
+				</div>
+
+				<div class="col text-center reveal-on-scroll">
+					<div class="row">
+						<a class="col-md-12" href="mailto:clauss.frank@gmail.com"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
+						<a class="col-md-12" href="mailto:clauss.frank@gmail.com">clauss.frank@gmail.com</a>
+					</div>
+				</div>
+
+			</div>
+		</footer>     
+
+
+		<div class="lang-switch" aria-label="Idioma / Language">
+			<a class="lang-switch-item" href="/" hreflang="es" lang="es" data-set-lang="es">ES</a>
+			<span class="lang-switch-item is-current" aria-current="true">EN</span>
+		</div>
+
+		<script src="https://kit.fontawesome.com/dfda2bb662.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script src="/assets/js/app.js"></script>
+	</body>
+</html>

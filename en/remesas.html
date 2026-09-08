@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Money Transfer POS — ClaussFrank</title>
+	<meta name="description" content="Case study: redesign of the Money Transfer Withdrawal flow in OXXO's XPOS system, by Claudia Franco.">
+	<link rel="canonical" href="https://claussfrank.github.io/en/remesas.html">
+	<link rel="alternate" hreflang="es" href="https://claussfrank.github.io/remesas.html">
+	<link rel="alternate" hreflang="en" href="https://claussfrank.github.io/en/remesas.html">
+	<link rel="alternate" hreflang="x-default" href="https://claussfrank.github.io/remesas.html">
+	<link rel="shortcut icon" href="/assets/img/iconoLogo.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="container">
+	<a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+	<nav id="navbar" class="navbar sticky-top navClau" aria-label="Main navigation">
+		<div class="container-fluid">
+			<a class="navbar-brand center" href="index.html"><img width="95%" src="/assets/img/menuInicio.svg" alt="Home"></a>
+			<a class="navbar-brand" href="index.html#acercaDeMi"><img width="95%" src="/assets/img/menuAbout.svg" alt="About Me"></a>
+			<a class="navbar-brand" href="index.html#proyectos"><img width="95%" src="/assets/img/menuWork.svg" alt="Work"></a>
+			<a class="navbar-brand" href="index.html#habilidades"><img width="95%" src="/assets/img/menuSkills.svg" alt="Soft Skills"></a>
+		</div>
+	</nav>
+
+	<!-- HERO DEL CASO -->
+	<section id="main-content" class="row align-items-center py-4">
+		<div class="col-md-6">
+			<p class="case-eyebrow">Grupo Ti México · Client: OXXO</p>
+			<h1 class="case-title">From a confusing flow to a clear process: redesigning Money Transfer Withdrawal in XPOS</h1>
+			<p class="case-intro">
+				I redesigned the Money Transfer Withdrawal flow inside OXXO's XPOS system — a mixed .NET + Delphi/VCL architecture — after finding, through the PO's reports and my own field research as a customer, that cashiers were mistaking action messages for error messages and abandoning the transaction when faced with a long, unclear form.
+			</p>
+			<dl class="case-meta">
+				<div>
+					<dt>Domain</dt>
+					<dd>Retail / Transactional (POS)</dd>
+				</div>
+				<div>
+					<dt>Duration</dt>
+					<dd>6 months</dd>
+				</div>
+				<div>
+					<dt>Team</dt>
+					<dd>UX/UI Designer (solo)</dd>
+				</div>
+				<div>
+					<dt>Role</dt>
+					<dd>End-to-end UX/UI design</dd>
+				</div>
+			</dl>
+		</div>
+		<div class="col-md-6">
+			<div class="case-hero-visual">
+				                    <img width="100%" src="/assets/img/Int_Remesas.jpg" alt="Money transfer flow redesign">
+
+			</div>
+		</div>
+	</section>
+
+	<!-- EL SÍNTOMA Y LA CAUSA RAÍZ -->
+	<section class="case-section">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>The symptom and the root cause</h2>
+				<p>
+					The service was being started but abandoned halfway through. The design team had no direct channel to the cashiers — everything came through the PO, who reported that action messages were being read as error messages.
+				</p>
+				<p>
+					To see it for myself, I went to an OXXO store as a customer and tried to request the service on three separate occasions. I confirmed what the PO had reported: the form was far too long, it was confusing, and the next steps were not clear either to the cashier or to me as the customer.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- RESTRICCIONES Y DECISIÓN -->
+	<section class="case-section">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Designing inside a system that could not be broken</h2>
+				<p>
+					Before proposing any visual change, I mapped the system's full modular architecture (XPOS in .NET plus transactional services in Delphi/VCL). The VCL engine does not support HEX colors, and no change could interrupt transactional continuity in production.
+				</p>
+				<div class="trade-grid">
+					<div>
+						<h6>What was ruled out</h6>
+						<p>I presented a proposal with an extra step in the flow, better distribution and more clarity — but it meant a harder technical challenge. The team prioritized technical feasibility over the clearest possible solution.</p>
+					</div>
+					<div>
+						<h6>The trade-off</h6>
+						<p>The system could not reach the visual quality of a modern stack. I designed the closest version possible within that limitation, trading visual polish for guaranteed compatibility.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- RESULTADO -->
+	<section class="case-section">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Outcome</h2>
+				<p>
+					The project was delivered with formal documentation, and with Nielsen's heuristics and Gestalt principles applied rigorously. I left the project while it was in testing, before results were measured in production.
+				</p>
+				<div class="case-note">
+					This case has no impact figure to show, and I would rather say so plainly than inflate it: it stands on the rigor of the diagnosis and of the design decision under real technical constraints, not on a number.
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- LECCIÓN APRENDIDA -->
+	<section class="case-section">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>What I learned</h2>
+				<p>
+					When your only feedback channel is an intermediary, there are things you will not see until you live them yourself. That was the reason behind going to collect my own money transfer as a customer — and it also let me spot additional opportunities that fell outside the scope of this project.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- SUBMENÚ: navegar directo a otro proyecto sin volver a la sección de Proyectos -->
+	<nav class="case-projects-nav" aria-label="Other projects">
+		<p class="case-projects-nav-label">Other projects</p>
+		<div class="case-projects-nav-list">
+			<a href="index.html" class="case-projects-nav-item"> « Home </a>
+			<a href="remesas.html" class="case-projects-nav-item is-current" aria-current="page">Money Transfer POS</a>
+			<a href="autocobro.html" class="case-projects-nav-item">Autocobro Look &amp; Feel</a>
+			<a href="buen-fin.html" class="case-projects-nav-item">Buen Fin 2019</a>
+			<a href="tienda-novartis.html" class="case-projects-nav-item">Tienda Novartis</a>
+		</div>
+	</nav>
+
+
+		<div class="lang-switch" aria-label="Idioma / Language">
+			<a class="lang-switch-item" href="/remesas.html" hreflang="es" lang="es" data-set-lang="es">ES</a>
+			<span class="lang-switch-item is-current" aria-current="true">EN</span>
+		</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="/assets/js/app.js"></script>
+
+</body>
+</html>
