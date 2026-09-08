@@ -26,3 +26,45 @@ document.addEventListener("DOMContentLoaded", function () {
         revealElements.forEach((el) => el.classList.add("is-visible"));
     }
 });
+
+/* ── Idioma ES/EN ─────────────────────────────────────────────────────────
+   La redirección automática vive inline en el <head> de las dos homes para
+   que no haya parpadeo. Aquí solo: recordar la elección manual y avisar
+   cuando la redirección ocurrió sola. */
+document.addEventListener("DOMContentLoaded", function () {
+    const altLink = document.querySelector(".lang-switch-item[data-set-lang]");
+    if (!altLink) return;
+
+    altLink.addEventListener("click", function () {
+        try {
+            localStorage.setItem("cf-lang", altLink.dataset.setLang);
+            sessionStorage.removeItem("cf-autolang");
+        } catch (e) {}
+    });
+
+    // ¿Llegamos aquí porque la home redirigió sola?
+    let autoLang = null;
+    try { autoLang = sessionStorage.getItem("cf-autolang"); } catch (e) {}
+    if (autoLang !== document.documentElement.lang) return;
+    try { sessionStorage.removeItem("cf-autolang"); } catch (e) {}
+
+    const isEn = document.documentElement.lang === "en";
+    const notice = document.createElement("div");
+    notice.className = "lang-notice";
+    notice.setAttribute("role", "status");
+    notice.innerHTML =
+        '<span>' + (isEn
+            ? 'Showing English based on your browser. <a href="' + altLink.getAttribute("href") + '" data-set-lang="es">Ver en español</a>'
+            : 'Te mostramos español según tu navegador. <a href="' + altLink.getAttribute("href") + '" data-set-lang="en">View in English</a>') +
+        '</span>' +
+        '<button type="button" aria-label="' + (isEn ? "Dismiss" : "Cerrar") + '">×</button>';
+
+    notice.querySelector("a").addEventListener("click", function (ev) {
+        try { localStorage.setItem("cf-lang", ev.currentTarget.dataset.setLang); } catch (e) {}
+    });
+    notice.querySelector("button").addEventListener("click", function () {
+        notice.remove();
+    });
+
+    document.body.appendChild(notice);
+});

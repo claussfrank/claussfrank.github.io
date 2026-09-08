@@ -5,19 +5,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>ClaussFrank</title>
 		<meta name="description" content="Claudia Franco, Diseñadora UX/UI, Diseñadora Web y Diseñadora Gráfica. Portafolio de proyectos de diseño de producto.">
-		<link rel="shortcut icon" href="assets/img/iconoLogo.png">
+			<link rel="canonical" href="https://claussfrank.github.io/">
+	<link rel="alternate" hreflang="es" href="https://claussfrank.github.io/">
+	<link rel="alternate" hreflang="en" href="https://claussfrank.github.io/en/">
+	<link rel="alternate" hreflang="x-default" href="https://claussfrank.github.io/">
+	<link rel="shortcut icon" href="/assets/img/iconoLogo.png">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="/assets/css/main.css">
 
+	<script>
+		/* Solo en la home y solo la primera visita: sugiere idioma segun el navegador.
+		   Los enlaces directos a un caso nunca se redirigen. */
+		(function () {
+			try {
+				var saved = localStorage.getItem("cf-lang");
+				if (saved === "en") { location.replace("/en/"); return; }
+				if (!saved && (navigator.language || "").toLowerCase().indexOf("en") === 0) {
+					sessionStorage.setItem("cf-autolang", "en");
+					location.replace("/en/");
+				}
+			} catch (e) {}
+		})();
+	</script>
 	</head>
 	<body  class="container ">
 		<a class="visually-hidden-focusable" href="#inicio">Saltar al contenido principal</a>
 		<nav id="navbar" class="navbar sticky-top navClau" aria-label="Navegación principal">
 			<div class="container-fluid">
-			  <a class="navbar-brand center" href="#"><img width="95%" src="assets/img/menuInicio.svg" alt="Inicio"></a>
-			  <a class="navbar-brand" href="#acercaDeMi"><img width="95%" src="assets/img/menuAcerca.svg" alt="Acerca de mi"></a>
-			  <a class="navbar-brand" href="#proyectos"><img width="95%" src="assets/img/menuProyectos.svg" alt="Proyectos"></a>
-			  <a class="navbar-brand" href="#habilidades"><img width="95%" src="assets/img/menuHabilidades.svg" alt="Habilidades Blandas"></a>
+			  <a class="navbar-brand center" href="#"><img width="95%" src="/assets/img/menuInicio.svg" alt="Inicio"></a>
+			  <a class="navbar-brand" href="#acercaDeMi"><img width="95%" src="/assets/img/menuAcerca.svg" alt="Acerca de mi"></a>
+			  <a class="navbar-brand" href="#proyectos"><img width="95%" src="/assets/img/menuProyectos.svg" alt="Proyectos"></a>
+			  <a class="navbar-brand" href="#habilidades"><img width="95%" src="/assets/img/menuHabilidades.svg" alt="Habilidades Blandas"></a>
 
 			</div>
 		</nav>	
@@ -31,7 +49,7 @@
                             <p class="h3">Diseñadora UX / UI | Diseñadora Web | Diseñadora Gráfica</p>
                         </div>
                         <div class="col-md-4 reveal-on-scroll">
-                            <img src="assets/img/luna.svg" alt="luna">
+                            <img src="/assets/img/luna.svg" alt="luna">
                         </div>
                     </div>
 					
@@ -50,7 +68,7 @@
 		<section id="acercaDeMi">
 						<h2 class="visually-hidden">Acerca de mí</h2>
 						<div class="row align-items-center">
-							<img class="col-md-4 text-left reveal-on-scroll" src="assets/img/Clau-F.svg" alt="Ilustración de Claudia Franco">
+							<img class="col-md-4 text-left reveal-on-scroll" src="/assets/img/Clau-F.svg" alt="Ilustración de Claudia Franco">
 							<p class="col-md-8 text-left reveal-on-scroll">
                 Seguro ya has visto muchos portafolios hoy. No quiero sonar repetitiva, así que voy directo: soy Clau, diseñadora UX/UI que también entiende la tecnología con la que trabaja. Si prefieres ir directo a ver mi trabajo, <a href="#proyectos">aquí están mis proyectos</a>. Pero si te quedas un momento, te cuento cómo pienso lo que hago.
                 <br><br>
@@ -77,7 +95,7 @@
                 <div class="col reveal-on-scroll">
                   <a href="remesas.html" class="cardLink">
                    
-                    <img width="100%" src="assets/img/Portada_Remesas.jpg" alt="Rediseño flujo Remesas">
+                    <img width="100%" src="/assets/img/Portada_Remesas.jpg" alt="Rediseño flujo Remesas">
                     <div class="cardCaption text-start">
                       <h3>De un flujo confuso a un proceso claro</h3>
                       <h6>Retiro de Remesas · OXXO / Grupo Ti México</h6>
@@ -89,7 +107,7 @@
                 <!-- PROYECTO 2: Autocobro - Nuevo Look & Feel -->
                 <div class="col reveal-on-scroll">
                   <a href="autocobro.html" class="cardLink">
-                    <img width="100%" src="assets/img/Portada_autocobro_ok.jpg" alt="Autocobro OXXO">
+                    <img width="100%" src="/assets/img/Portada_autocobro_ok.jpg" alt="Autocobro OXXO">
                     <div class="cardCaption text-start">
                       <h3>Nuevo Look & Feel</h3>
                       <h6 >Autocobro · OXXO / Grupo Ti México</h6>
@@ -103,7 +121,7 @@
                 <!-- PROYECTO 3: Buen Fin 2019 -->
                 <div class="col reveal-on-scroll">
                   <a href="buen-fin.html" class="cardLink">
-                    <img width="100%" src="assets/img/Portada_BuenFin2019_ok.jpg" alt="Buen Fin 2019">
+                    <img width="100%" src="/assets/img/Portada_BuenFin2019_ok.jpg" alt="Buen Fin 2019">
                     <div class="cardCaption text-start">
                       <h3>+3,905% de revenue con una landing categorizada</h3>
                       <h6>Buen Fin 2019 · Best Buy México</h6>
@@ -116,7 +134,7 @@
                 <!-- PROYECTO 4: Tienda Novartis -->
                 <div class="col reveal-on-scroll">
                   <a href="tienda-novartis.html" class="cardLink">
-                    <img width="100%" src="assets/img/Portada_Tienda-Novartis.jpg" alt="Tienda Novartis">
+                    <img width="100%" src="/assets/img/Portada_Tienda-Novartis.jpg" alt="Tienda Novartis">
                     <div class="cardCaption text-start">
                       <h3>El diagnóstico que nadie había hecho</h3>
                       <h6>Tienda Novartis</h6>
@@ -150,7 +168,7 @@
                       <div class="card text-start">
                         <div class="row align-items-center">
                           <div class="col-md-4 text-center">
-                            <img src="assets/img/Icono-Habilidades_bota.svg" class="img-fluid rounded-start" alt="Icono de Habilidades bota">
+                            <img src="/assets/img/Icono-Habilidades_bota.svg" class="img-fluid rounded-start" alt="Icono de Habilidades bota">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
@@ -166,7 +184,7 @@
                       <div class="card text-start">
                         <div class="row align-items-center">
                           <div class="col-md-4 text-center">
-                            <img src="assets/img/Icono-Habilidades_mapa.svg" class="img-fluid rounded-start" alt="Icono de Habilidades mapa">
+                            <img src="/assets/img/Icono-Habilidades_mapa.svg" class="img-fluid rounded-start" alt="Icono de Habilidades mapa">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
@@ -182,7 +200,7 @@
                       <div class="card text-start">
                         <div class="row align-items-center">
                           <div class="col-md-4 text-center">
-                            <img src="assets/img/Icono-Habilidades_lampara.svg" class="img-fluid rounded-start" alt="Icono de Habilidades lampara">
+                            <img src="/assets/img/Icono-Habilidades_lampara.svg" class="img-fluid rounded-start" alt="Icono de Habilidades lampara">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
@@ -198,7 +216,7 @@
                       <div class="card text-start">
                         <div class="row align-items-center">
                           <div class="col-md-4 text-center">
-                            <img src="assets/img/Icono-Habilidades_cuerda.svg" class="img-fluid rounded-start" alt="Icono de Habilidade cuerda">
+                            <img src="/assets/img/Icono-Habilidades_cuerda.svg" class="img-fluid rounded-start" alt="Icono de Habilidade cuerda">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
@@ -214,7 +232,7 @@
                       <div class="card text-start">
                         <div class="row align-items-center">
                           <div class="col-md-4 text-center">
-                            <img src="assets/img/Icono-Habilidades_brujula.png" class="img-fluid rounded-start" alt="Icono de Habilidade brújula">
+                            <img src="/assets/img/Icono-Habilidades_brujula.png" class="img-fluid rounded-start" alt="Icono de Habilidade brújula">
 
                           </div>
                           <div class="col-md-8">
@@ -227,7 +245,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-12 text-center reveal-on-scroll"><img width="100%" src="assets/img/Campamento Habilidades.svg" alt="Ilustración Habilidades campamento"></div>
+                    <div class="col-md-12 text-center reveal-on-scroll"><img width="100%" src="/assets/img/Campamento Habilidades.svg" alt="Ilustración Habilidades campamento"></div>
                   </div>
                 </div>
 
@@ -278,8 +296,14 @@
 			</div>
 		</footer>     
 
+
+		<div class="lang-switch" aria-label="Idioma / Language">
+			<span class="lang-switch-item is-current" aria-current="true">ES</span>
+			<a class="lang-switch-item" href="/en/" hreflang="en" lang="en" data-set-lang="en">EN</a>
+		</div>
+
 		<script src="https://kit.fontawesome.com/dfda2bb662.js" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-		<script src="assets/js/app.js"></script>
+		<script src="/assets/js/app.js"></script>
 	</body>
 </html>
