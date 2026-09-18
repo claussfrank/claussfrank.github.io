@@ -393,6 +393,28 @@ button{
   margin: 0 0 4% 0;
 }
 
+/* Tarjetas de Habilidades Blandas — mismo tratamiento que las de Proyectos.
+   Ojo: la regla `section > div > .card` de más arriba nunca las alcanzó,
+   porque aquí .card va cuatro niveles dentro de <section> (container > row >
+   col > card), no dos. Sin esto heredaban la tipografía y el fondo de
+   Bootstrap. Al ir por #habilidades, cubre español e inglés a la vez. */
+#habilidades .card {
+  background-color: var(--color-cream);
+  border: 0;
+  border-radius: 8px;
+}
+#habilidades .card-title {
+  font-family: "centabel";
+  font-size: 1.6rem;
+  color: var(--color-dark);
+  margin-bottom: 0.35rem;
+}
+#habilidades .card-text {
+  font-family: "CaviarDreams";
+  font-size: 1.2rem;
+  color: var(--color-dark);
+}
+
 
 /* ===== Fase 04 — Páginas de caso de estudio (Remesas, Autocobro, Buen Fin, Tienda Novartis) =====
    Movido aquí desde <style> inline para mantener un solo lugar de estilos.
